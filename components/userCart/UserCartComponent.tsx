@@ -37,7 +37,7 @@ one for the classics." />
   </div>
 
   <hr className="bg-white mt-16"/>
-  <div className="w-[282px] text-right h-[62px] mt-8">
+  <div className=" text-right h-[62px] mt-8">
     <p className=" h-[34px] font-clash font-normal left-7 text text-[#4E4D93] text-right text-xl">Subtotal <span className="text-darkPrimary">&#163; 425</span></p>
     <p className="font-satoshi font-normal leading-[21px] text-[#4E4D93] text-right">Taxes and shipping are calculated at checkout</p>
   </div>
