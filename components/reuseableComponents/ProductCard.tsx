@@ -21,7 +21,7 @@ const ProductCard: React.FC<CardProps> = ({ image, heading, price, id }) => {
           {heading}
         </h4>
         <p className="font-satoshi font-normal leading-[27px] text-darkPrimary md:text-xl">
-          &pound;{price}
+        &#163;{price}
         </p>
       </div>
 

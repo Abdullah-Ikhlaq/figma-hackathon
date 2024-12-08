@@ -120,7 +120,7 @@ const Header = () => {
 
         <div className="flex gap-4 justify-center">
           {/* User Icon */}
-          <Link href="/user" aria-label="User Profile">
+          <Link href="/" aria-label="User Profile">
             <div className="md:relative md:bottom-8 md:left-[22rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/user.png"
