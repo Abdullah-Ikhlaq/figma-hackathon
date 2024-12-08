@@ -116,21 +116,24 @@ const ProductCardDetails = () => {
                 Quantity
               </h5>
               <div className="relative md:right-10 md:top-5 mt-4 flex items-center md:justify-center space-x-4 w-full">
-                <button
-                  onClick={increase}
+              
+
+              <button
+                  onClick={decrease}
                   className="bg-lightGray text-darkPrimary hover:bg-darkPrimary hover:text-white p-2 rounded w-full md:w-[50px]"
                 >
-                  <p className="text-xl md:pl-0 pl-[4rem]">+</p>
+                  <p className="text-xl md:pl-0 pl-[4rem] pb-3">_</p>
                 </button>
 
                 <div className="text-xl text-darkPrimary">{quantity}</div>
 
                 <button
-                  onClick={decrease}
+                  onClick={increase}
                   className="bg-lightGray text-darkPrimary hover:bg-darkPrimary hover:text-white p-2 rounded w-full md:w-[50px]"
                 >
-                  <p className="text-xl md:pr-0 pr-[4rem] pb-3">_</p>
+                  <p className="text-xl md:pr-0 pr-[4rem]">+</p>
                 </button>
+
               </div>
               <button className="relative md:top-5 md:w-[250px] mt-4 w-full bg-darkPrimary px-[32px] py-[16px] font-satoshi font-normal leading-6 text-white hover:bg-navbarColor">
                 Add to cart
