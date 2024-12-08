@@ -5,11 +5,11 @@ import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); // For menu toggle
-  const [isSearchOpen, setIsSearchOpen] = useState(false); // For search bar toggle
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev); // Toggle menu state
-  const toggleSearch = () => setIsSearchOpen((prev) => !prev); // Toggle search bar state
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
   return (
     <nav className="relative w-full p-6 md:w-[1440px] md:h-[132px] bg-white">
@@ -19,7 +19,6 @@ const Header = () => {
           Avion
         </h1>
 
-        {/* Search and Hamburger Icons */}
         <div className="flex items-center space-x-4">
           {/* Search Icon */}
           <button
@@ -58,39 +57,68 @@ const Header = () => {
           isOpen ? "block" : "hidden"
         } md:flex flex-col md:flex-row md:items-center md:justify-center mt-4 md:mt-0 space-y-4 md:space-y-0 md:space-x-8 md:ml-16`}
       >
-         <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
-          Home 
+        <Link
+          href="/"
+          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+        >
+          Home
         </Link>
-        <Link href="/" className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/"
+          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           Plant Pots
         </Link>
-        <Link href="/" className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/"
+          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           Ceramics
         </Link>
-        <Link href="/" className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/"
+          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           Tables
         </Link>
-        <Link href="/" className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/"
+          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           Chairs
         </Link>
-        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/"
+          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           Crockery
         </Link>
-        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/"
+          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           Tableware
         </Link>
-        <Link href="/" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/"
+          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           Cutlery
         </Link>
-        <Link href="/products" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
+        <Link
+          href="/products"
+          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+        >
           All Products
         </Link>
-        <Link href="/about" className="block text-center border-b border-transparent py-1 hover:border-darkPrimary">
-          About 
+        <Link
+          href="/about"
+          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+        >
+          About
         </Link>
 
         <div className="flex gap-4 justify-center">
-
           {/* User Icon */}
           <Link href="/user" aria-label="User Profile">
             <div className="md:relative md:bottom-8 md:left-[22rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
@@ -99,11 +127,12 @@ const Header = () => {
                 alt="User Profile Icon"
                 width={16}
                 height={16}
-              className="md:w-[24px] md:h-[24px]"/>
+                className="md:w-[24px] md:h-[24px]"
+              />
             </div>
-        </Link>
+          </Link>
 
- <Link href="/usercart" aria-label="Cart">
+          <Link href="/usercart" aria-label="Cart">
             <div className="md:relative md:bottom-8 md:left-[16.4rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/cart.png"

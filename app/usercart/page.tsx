@@ -1,11 +1,11 @@
-import React from 'react'
+import UserCartComponent from "@/components/userCart/UserCartComponent";
 
 const UserCart = () => {
   return (
-    <div className=''>
-
+    <div className="">
+      <UserCartComponent />
     </div>
-  )
-}
+  );
+};
 
 export default UserCart;
