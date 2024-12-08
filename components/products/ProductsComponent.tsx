@@ -8,9 +8,21 @@ import Link from "next/link";
 const ProductsComponent = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isSortOpen, setIsSortOpen] = useState(false);
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const [isPriceOpen, setIsPriceOpen] = useState(false);
+  const [isBrandOpen, setIsBrandOpen] = useState(false);
+  const [isProductTypeOpen, setIsProductTypeOpen] = useState(false);
+  const [isDateAddedOpen, setIsDateAddedOpen] = useState(false);
+
 
   const toggleFilterMenu = () => setIsFilterOpen(!isFilterOpen);
   const toggleSortMenu = () => setIsSortOpen(!isSortOpen);
+  const toggleCategoryMenu = () => setIsCategoryOpen(!isCategoryOpen);
+  const togglePriceMenu = () => setIsPriceOpen(!isPriceOpen);
+  const toggleProductTypeMenu = () => setIsProductTypeOpen(!isProductTypeOpen);
+  const toggleBrandMenu = () => setIsBrandOpen(!isBrandOpen);
+  const toggleDateAddedMenu = () => setIsDateAddedOpen(!isDateAddedOpen);
+  
 
   return (
     <div className="flex flex-col md:w-[1440px] md:h-[2439px]">
@@ -91,7 +103,7 @@ const ProductsComponent = () => {
           {/* Category Filter */}
           <div className="relative bottom-[35rem]">
             <button
-              onClick={toggleFilterMenu}
+              onClick={toggleCategoryMenu}
               className="flex items-center px-[24px] py-[12px] text-[#2a254b] hover:bg-gray-100 font-satoshi font-normal leading-6 text-lg"
             >
               Category
@@ -99,8 +111,8 @@ const ProductsComponent = () => {
             </button>
             {/* Dropdown Menu */}
 
-            {isFilterOpen && (
-              <div className="absolute top-12 hidden bg-white border border-gray-300 rounded-lg shadow-lg z-10 group-hover:block">
+            {isCategoryOpen && (
+              <div className="absolute top-12 hidden bg-white border border-gray-300 rounded-lg shadow-lg z-10">
                 <ul className="text-sm text-darkBlue">
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                     Furniture
@@ -118,13 +130,13 @@ const ProductsComponent = () => {
           {/* Product Type Filter */}
           <div className="relative bottom-[35rem]">
             <button
-              onClick={toggleFilterMenu}
+              onClick={toggleProductTypeMenu}
               className="flex items-center px-[24px] py-[12px] text-[#2a254b] hover:bg-gray-100 font-satoshi font-normal leading-6 text-lg"
             >
               Product Type
               <IoMdArrowDropdown className="ml-2 text-xl" />
             </button>
-            {isFilterOpen && (
+            {isProductTypeOpen && (
               <div className="absolute top-12 left-0 hidden bg-white border border-gray-300 rounded-lg shadow-lg z-10 group-hover:block">
                 <ul className="text-sm text-darkBlue">
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -144,14 +156,14 @@ const ProductsComponent = () => {
           {/* Price Filter */}
           <div className="relative bottom-[35rem]">
             <button
-              onClick={toggleFilterMenu}
+              onClick={togglePriceMenu}
               className="flex items-center px-[24px] py-[12px] text-[#2a254b] hover:bg-gray-100 font-satoshi font-normal leading-6 text-lg"
             >
               Price
               <IoMdArrowDropdown className="ml-2 text-xl" />
             </button>
 
-            {isFilterOpen && (
+            {isPriceOpen && (
               <div className="absolute top-12 left-0 hidden bg-white border border-gray-300 rounded-lg shadow-lg z-10 group-hover:block">
                 <ul className="text-sm text-darkBlue">
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -174,13 +186,13 @@ const ProductsComponent = () => {
           {/* Brand Filter */}
           <div className="relative bottom-[35rem]">
             <button
-              onClick={toggleFilterMenu}
+              onClick={toggleBrandMenu}
               className="flex items-center px-[24px] py-[12px] text-[#2a254b] hover:bg-gray-100 font-satoshi font-normal leading-6 text-lg"
             >
               Brand
               <IoMdArrowDropdown className="ml-2 text-xl" />
             </button>
-            {isFilterOpen && (
+            {isBrandOpen && (
               <div className="absolute top-12 left-0 hidden bg-white border border-gray-300 rounded-lg shadow-lg z-10 group-hover:block">
                 <ul className="text-sm text-darkBlue">
                   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
@@ -207,14 +219,14 @@ const ProductsComponent = () => {
             Sorted by:
           </p>
           <button
-            onClick={toggleSortMenu}
+            onClick={toggleDateAddedMenu}
             className="flex items-center px-[24px] py-[12px] text-[#2a254b] hover:bg-gray-100 font-satoshi font-normal leading-6 text-lg"
           >
             Date Added
             <IoMdArrowDropdown className="ml-2 text-xl" />
           </button>
           {/* Dropdown Menu */}
-          {isSortOpen && (
+          {isDateAddedOpen && (
             <div className="absolute top-12 left-0 hidden bg-white border border-gray-300 rounded-lg shadow-lg z-10 group-hover:block">
               <ul className="text-sm text-darkBlue">
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
