@@ -5,11 +5,11 @@ const UserCartComponent = () => {
     <div className="bg-lightGray h-[1466px] mx-auto w-[390px] md:w-[1440px] md:h-[749px] md:px-[8rem] md:py-[2rem] py-4 px-6">
         <h3 className="font-clash font-normal leading-[33.6px] text-darkPrimary mb-4 my-4 text-2xl md:text-4xl">Your shopping cart</h3>
 
-        <div>
-           <div className="flex relative bottom-[10rem] ">
-           <p className="text-lg font-clash font-normal leading-[19.6px] text-darkPrimary"></p>
-            <p className="relative font-clash font-normal text-lg leading-[19.6px] text-darkPrimary"></p>
-            <p className="relative font-clash font-normal text-lg leading-[19.6px] text-darkPrimary"></p>
+        <div className="hidden md:block">
+           <div className="flex relative md:top-[4.2rem] ">
+           <p className="pl-[1rem]text-lg font-clash font-normal leading-[19.6px] text-darkPrimary">Product</p>
+            <p className="relative left-[46rem] font-clash font-normal text-lg leading-[19.6px] text-darkPrimary">Quantity</p>
+            <p className="relative left-[62rem] font-clash font-normal text-lg leading-[19.6px] text-darkPrimary">Total</p>
            </div>
             <hr className="bg-lightGray mt-[5rem]"/>
         </div>
