@@ -93,7 +93,7 @@ const PopularProducts = () => {
           id="4"
         />
         <ProductCard
-          image="OldChair"
+          image="oldChair"
           heading="The Dandy Chair"
           price="250"
           id="9"

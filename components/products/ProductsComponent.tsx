@@ -249,7 +249,7 @@ const ProductsComponent = () => {
 
       <div className="relative md:bottom-[34rem] md:w-[1440px] w-[390px] h-[625px] grid grid-cols-2 md:grid-cols-4 gap-[2rem] md:gap-[2rem] gap-y-[8rem] mt-[6rem]">
         <ProductCard
-          image="vase"
+          image="Vase"
           heading="Rustic Vase Set"
           price="155"
           id="1"
