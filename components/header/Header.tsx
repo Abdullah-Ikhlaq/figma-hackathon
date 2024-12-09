@@ -12,7 +12,7 @@ const Header = () => {
   const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
   return (
-    <nav className="relative w-full p-6 md:w-[1440px] md:h-[132px] bg-white">
+    <nav className="relative w-full p-6 md:py-6 md:w-[1440px] md:h-[132px] bg-white">
       <div className="flex justify-between md:justify-center items-center md:border-b md:border-lightGray">
         {/* Logo */}
         <h1 className="text-2xl font-normal font-clash leading-[29.52px] text-darkBlue">
