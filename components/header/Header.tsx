@@ -121,7 +121,7 @@ const Header = () => {
         <div className="flex gap-4 justify-center">
           {/* User Icon */}
           <Link href="/" aria-label="User Profile">
-            <div className="md:relative md:bottom-8 md:left-[22rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-8 md:left-[12rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/user.png"
                 alt="User Profile Icon"
@@ -133,7 +133,7 @@ const Header = () => {
           </Link>
 
           <Link href="/usercart" aria-label="Cart">
-            <div className="md:relative md:bottom-8 md:left-[16.4rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-8 md:left-[6.4rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/cart.png"
                 alt="Cart Icon"
