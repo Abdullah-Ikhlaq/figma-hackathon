@@ -258,7 +258,7 @@ const ProductsComponent = () => {
         <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2" />
 
         <ProductCard
-          image="SlikVase"
+          image="SilkVase"
           heading="The Silky Vase"
           price="125"
           id="3"
@@ -313,7 +313,7 @@ const ProductsComponent = () => {
         <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2" />
 
         <ProductCard
-          image="SlikVase"
+          image="SilkVase"
           heading="The Silky Vase"
           price="125"
           id="3"
@@ -328,7 +328,7 @@ const ProductsComponent = () => {
       </div>
 
       <div className="px-[2rem]">
-        <button className="w-full md:relative mt-[12rem] md:bottom-[4rem] md:left-[36rem] md:mt-0 md:w-[200px] md:h-[56px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-darkPrimary font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out">
+        <button className="w-full md:relative mt-[12rem] md:bottom-[6rem] md:left-[34rem] md:mt-0 md:w-[200px] md:h-[56px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-darkPrimary font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out">
           <Link href="/ ">View collection</Link>
         </button>
       </div>

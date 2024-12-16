@@ -17,7 +17,7 @@ const Listing = () => {
         <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2" />
 
         <ProductCard
-          image="SlikVase"
+          image="SilkVase"
           heading="The Silky Vase"
           price="125"
           id="3"
