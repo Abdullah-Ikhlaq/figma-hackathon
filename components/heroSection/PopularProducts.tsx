@@ -9,12 +9,12 @@ import ProductCard from "../reuseableComponents/ProductCard";
 
 const PopularProducts = () => {
   return (
-    <div className="relative mt-[14rem] mx-[1.5rem] w-[390px] h-[573px] md:w-[1440px] md:h-[744px] bg-white">
-      <h4 className="relative my-4 pl-4 font-clash font-normal leading-[24.6px] text-darkPrimary text-lg md:text-4xl md:bottom-[10rem]">
+    <div className="relative mt-[14rem] mx-[1.5rem] w-[390px] h-[573px] lg:w-[1440px] lg:h-[744px] bg-white">
+      <h4 className="relative my-4 pl-4 font-clash font-normal leading-[24.6px] text-darkPrimary text-lg lg:text-4xl lg:bottom-[10rem]">
         Our popular products
       </h4>
 
-      <div className="md:hidden px-4 py-2">
+      <div className="lg:hidden px-4 py-2">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2000, disableOnInteraction: true }}
@@ -57,10 +57,10 @@ const PopularProducts = () => {
         </Swiper>
       </div>
 
-      <div className="relative hidden md:bottom-[8rem] md:w-[1440px] md:h-[375px] md:flex gap-[30px] group">
+      <div className="relative hidden lg:bottom-[8rem] lg:w-[1440px] lg:h-[375px] lg:flex gap-[30px] group">
         <div
           key="/products/id10"
-          className="hidden md:flex flex-col w-[630px] h-[375px] gap-[2rem]"
+          className="hidden lg:flex flex-col w-[630px] h-[375px] gap-[2rem]"
         >
           <Image
             src={`/images/sofa.png`}
@@ -71,17 +71,17 @@ const PopularProducts = () => {
           />
 
           <div className="flex flex-col gap-[8px]">
-            <h4 className="font-clash font-normal leading-7 text-darkPrimary md:text-xl">
+            <h4 className="font-clash font-normal leading-7 text-darkPrimary lg:text-xl">
               The Poplar suede sofa
             </h4>
-            <p className="font-satoshi font-normal leading-[27px] text-darkPrimary md:text-xl">
+            <p className="font-satoshi font-normal leading-[27px] text-darkPrimary lg:text-xl">
               &pound; 980
             </p>
           </div>
 
           {/* Add to Cart button */}
-          <button className="w-[160px] md:w-[635px] absolute bottom-0 right-[30.5rem] transform -translate-x-1/2 px-4 md:px-8 py-2 md:py-4 bg-black/70 text-white rounded-md opacity-0 group-hover:opacity-100 transition-opacity z-10">
-            <Link href={`/products/id10`} className="text-sm md:text-xl">
+          <button className="w-[160px] lg:w-[629px] absolute bottom-0 right-[31rem] transform -translate-x-1/2 px-4 lg:px-8 py-2 lg:py-4 bg-black/70 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity z-10">
+            <Link href={`/products/id10`} className="text-sm lg:text-xl">
               Add to Cart
             </Link>
           </button>
@@ -100,7 +100,7 @@ const PopularProducts = () => {
         />
       </div>
 
-      <div className="relative md:right-[4rem] md:top-[4rem] flex md:justify-center">
+      <div className="relative lg:right-[4rem] lg:top-[4rem] flex lg:justify-center">
         <button className=" m-2 mt-4 w-[309px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-[#2a254b] font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out text-lg">
           View collection
         </button>

@@ -12,10 +12,10 @@ const Header = () => {
   const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
   return (
-    <nav className="relative w-full p-6 md:py-6 md:w-[1440px] md:h-[132px] bg-white">
+    <nav className="relative w-full p-6 md:py-6 bg-white">
       <div className="flex justify-between md:justify-center items-center md:border-b md:border-lightGray">
         {/* Logo */}
-        <h1 className="text-2xl font-normal font-clash leading-[29.52px] text-darkBlue">
+        <h1 className="text-2 font-normal font-clash leading-[29.52px] text-darkBlue">
           Avion
         </h1>
 
@@ -24,7 +24,7 @@ const Header = () => {
           <button
             onClick={toggleSearch}
             aria-label="Search"
-            className="md:relative md:right-[44rem] flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-200"
+            className="md:relative md:right-[30rem] lg:right-[44rem] flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-200"
           >
             <CiSearch className="text-lg" />
           </button>
@@ -46,7 +46,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search"
-            className="w-full border placeholder:text-white  bg-black/40 text-white border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border placeholder:text-white  bg-black/40 text-white border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"
           />
         </div>
       )}
@@ -55,7 +55,7 @@ const Header = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } md:flex flex-col md:flex-row md:items-center md:justify-center mt-4 md:mt-0 space-y-4 md:space-y-0 md:space-x-8 md:ml-16`}
+        } md:flex flex-col md:flex-row md:items-center md:justify-center mt-4 md:mt-0 space-y-4 lg:space-y-0 md:space-x-7 lg:space-x-8 lg:ml-16 md:ml-4`}
       >
         <Link
           href="/"
@@ -121,25 +121,25 @@ const Header = () => {
         <div className="flex gap-4 justify-center">
           {/* User Icon */}
           <Link href="/" aria-label="User Profile">
-            <div className="md:relative md:bottom-8 md:left-[12rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-12 lg:bottom-7 md:left-[0rem] lg:left-[4rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/user.png"
                 alt="User Profile Icon"
                 width={16}
                 height={16}
-                className="md:w-[24px] md:h-[24px]"
+                className=""
               />
             </div>
           </Link>
 
           <Link href="/usercart" aria-label="Cart">
-            <div className="md:relative md:bottom-8 md:left-[6.4rem] flex items-center justify-center w-8 h-8 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-12 lg:bottom-7 md:left-[-4.3rem] lg:left-[0rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/cart.png"
                 alt="Cart Icon"
                 width={16}
                 height={16}
-                className="md:w-[24px] md:h-[24px]"
+                className=""
               />
             </div>
           </Link>

@@ -11,9 +11,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative md:w-[1440px] md:h-[300] w-[390px] h-[720px] bottom-4 bg-darkPrimary gap-8 md:py-[6rem] md:px-[2rem]">
+    <div className="relative md:w-[1333px] md:h-[300] w-[390px] h-[720px] bottom-0 bg-darkPrimary gap-8 md:py-[6rem] md:px-[2rem]">
       <div className="flex flex-col lg:flex-row md:border-b md:border-[#4e4d93] ">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 px-6 py-10 md:gap-[4rem]">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 px-6 py-12 md:gap-[4rem]">
           <div>
             <FooterHeading name="Categories" />
             <FooterLinks name="Crockery" />
@@ -58,10 +58,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="md:flex md:justify-between">
-        <p className="text-center  font-satoshi font-normal leading-[18.9px] text-white mt-6 md:text-lg md:mt-8">
+        <p className="text-center  font-satoshi font-normal leading-[18.9px] text-white mt-4 md:text-lg md:mt-12">
           Copyright 2022 Avion LTD
         </p>
-        <div className="hidden md:flex mt-10 mr-4 gap-3">
+        <div className="hidden md:flex mt-12 mr-4 gap-3">
           <FaLinkedin className="w-[24px] h-[24px] text-white" />
           <FaFacebookSquare className="w-[24px] h-[24px] text-white" />
           <FaInstagram className="w-[24px] h-[24px] text-white" />
