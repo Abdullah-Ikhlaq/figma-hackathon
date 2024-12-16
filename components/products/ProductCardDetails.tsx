@@ -162,7 +162,7 @@ const ProductCardDetails = () => {
           />
 
           <ProductCard
-            image="SlikVase"
+            image="SilkVase"
             heading="The Silky Vase"
             price="125"
             id="3"
