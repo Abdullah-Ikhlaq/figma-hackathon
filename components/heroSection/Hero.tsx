@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="relative w-[390px] h-[502px] lg:w-[1180px] md:w-[850px] md:h-[584px] lg:my-[4rem] lg:mx-[3.5rem] bg-darkPrimary flex flex-col md:flex-row lg:gap-[2rem] md:gap-0 gap-[2rem] md:mx-auto">
+    <div className="relative mx-auto w-[390px] h-[502px] lg:w-[1180px] md:w-[850px] md:h-[584px] lg:my-[4rem] lg:mx-[3.5rem] bg-darkPrimary flex flex-col md:flex-row lg:gap-[2rem] md:gap-0 gap-[2rem] md:mx-auto">
       <div className="">
         <div className="px-10 md:px-6 py-10 lg:py-[5rem] lg:px-[5rem]">
           <h2 className="font-clash font-normal  leading-[44.8px] text-white text-3xl lg:text-4xl">

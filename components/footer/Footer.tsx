@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative md:w-[1200px] lg:w-[1333px] md:h-[500px] lg:h-[360px] w-[390px] h-[720px] bottom-0 bg-darkPrimary gap-8 md:gap-2 lg:gap-8 md:px-[2rem]">
+    <div className="relative md:w-[1200px] lg:w-[1350px] md:h-[500px] lg:h-[360px] w-[390px] h-[720px] bottom-0 lg:mx-0 bg-darkPrimary gap-8 md:gap-2 lg:gap-8 md:px-[2rem] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:border-b md:border-[#4e4d93] ">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 lg:gap-[5rem] md:-gap-[0rem] md:pr-[14rem] lg:px-6">
           <div>

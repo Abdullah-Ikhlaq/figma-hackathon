@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const AboutSection = () => {
   return (
-    <div className="relative w-[390px] h-[385px] py-[32px] px-[24px] my-[3rem] flex flex-col md:flex-row lg:w-[1340px] lg:h-[277px] lg:px-[12rem] lg:py-[2rem] lg:gap-[8rem]">
+    <div className="relative w-[390px] h-[385px] py-[32px] px-[24px] my-[3rem] flex flex-col lg:flex-row lg:w-[1340px] lg:h-[277px] lg:px-[12rem] lg:py-[2rem] lg:gap-[8rem]">
       <h2 className="font-clash font-normal leading-[44.8px] text-darkPrimary text-3xl md:w-[704px]">
         A brand built on the love of craftmanship, quality and outstanding
         customer service

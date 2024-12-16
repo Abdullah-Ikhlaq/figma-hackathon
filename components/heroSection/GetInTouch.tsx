@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GetInTouch = () => {
   return (
-    <div className="relative w-[390px] h-[828px] lg:w-[1290px] md:w-[890px] lg:h-[603px] bg-white lg:mt-0 mt-[7rem] md:bottom-[11rem] lg:bottom-0 md:mx-auto">
+    <div className="relative w-[390px] h-[828px] lg:w-[1290px] md:w-[890px] lg:h-[603px] bg-white mt-[7rem] md:bottom-[11rem] lg:-bottom-[14rem] mx-auto lg:mx-2">
       <div className="flex flex-col gap-[16px] p-4 lg:w-[720px] md:w-[850px]">
         <h4 className="font-clash text-xl font-normal leading-[28px] text-[#2a254b] lg:text-2xl lg:w-[514px] md:w-[600px] md:text-3xl">
           From a studio in London to a global brand with over 400 outlets

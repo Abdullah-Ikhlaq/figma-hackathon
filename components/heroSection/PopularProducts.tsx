@@ -9,7 +9,7 @@ import ProductCard from "../reuseableComponents/ProductCard";
 
 const PopularProducts = () => {
   return (
-    <div className="relative mt-[14rem] mx-[1.5rem] w-[390px] h-[573px] lg:w-[1440px] md:w-[890px] md:h-[744px] bg-white md:px-[2rem] md:mx-auto lg:px-0 lg:mx-[1.5rem] md:mt-0 ">
+    <div className="relative mt-[14rem] w-[390px] h-[573px] lg:w-[1440px] md:w-[890px] md:h-[744px] bg-white md:px-[2rem] mx-auto lg:px-0 lg:mx-[1.5rem] md:mt-0 lg:top-[20rem]">
       <h4 className="relative my-4 pl-4 font-clash font-normal leading-[24.6px] text-darkPrimary text-lg lg:text-4xl md:text-3xl lg:bottom-[10rem]">
         Our popular products
       </h4>
