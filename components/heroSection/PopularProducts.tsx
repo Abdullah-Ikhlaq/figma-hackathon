@@ -9,12 +9,12 @@ import ProductCard from "../reuseableComponents/ProductCard";
 
 const PopularProducts = () => {
   return (
-    <div className="relative mt-[14rem] mx-[1.5rem] w-[390px] h-[573px] lg:w-[1440px] lg:h-[744px] bg-white">
-      <h4 className="relative my-4 pl-4 font-clash font-normal leading-[24.6px] text-darkPrimary text-lg lg:text-4xl lg:bottom-[10rem]">
+    <div className="relative mt-[14rem] mx-[1.5rem] w-[390px] h-[573px] lg:w-[1440px] md:w-[890px] md:h-[744px] bg-white md:px-[2rem] md:mx-auto lg:px-0 lg:mx-[1.5rem] md:mt-0 ">
+      <h4 className="relative my-4 pl-4 font-clash font-normal leading-[24.6px] text-darkPrimary text-lg lg:text-4xl md:text-3xl lg:bottom-[10rem]">
         Our popular products
       </h4>
 
-      <div className="lg:hidden px-4 py-2">
+      <div className="lg:hidden px-4 md:px-0 py-2">
         <Swiper
           modules={[Autoplay]}
           autoplay={{ delay: 2000, disableOnInteraction: true }}
@@ -100,7 +100,7 @@ const PopularProducts = () => {
         />
       </div>
 
-      <div className="relative lg:right-[4rem] lg:top-[4rem] flex lg:justify-center">
+      <div className="relative lg:-left-[4rem] lg:top-[4rem] flex lg:justify-center mt-0 md:mt-[4rem] lg:mt-0 md:left-[12rem]">
         <button className=" m-2 mt-4 w-[309px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-[#2a254b] font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out text-lg">
           View collection
         </button>

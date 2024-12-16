@@ -24,7 +24,7 @@ const Header = () => {
           <button
             onClick={toggleSearch}
             aria-label="Search"
-            className="md:relative md:right-[30rem] lg:right-[44rem] flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-200"
+            className="md:relative md:right-[20rem] lg:right-[44rem] flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-200"
           >
             <CiSearch className="text-lg" />
           </button>
@@ -55,11 +55,11 @@ const Header = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } md:flex flex-col md:flex-row md:items-center md:justify-center mt-4 md:mt-0 space-y-4 lg:space-y-0 md:space-x-7 lg:space-x-8 lg:ml-16 md:ml-4`}
+        } lg:flex md:grid md:grid-cols-5 flex-col lg:flex-row md:items-center md:justify-center mt-4 md:mt-0 space-y-4 md:space-y-0 md:space-x-1 lg:space-x-8 lg:ml-16 md:ml-4 `}
       >
         <Link
           href="/"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+          className="block text-center border-b border-transparent py-1 md:mt-3 lg:-mt-1 mt-0 hover:border-darkPrimary"
         >
           Home
         </Link>
@@ -121,7 +121,7 @@ const Header = () => {
         <div className="flex gap-4 justify-center">
           {/* User Icon */}
           <Link href="/" aria-label="User Profile">
-            <div className="md:relative md:bottom-12 lg:bottom-7 md:left-[0rem] lg:left-[4rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-[6.7rem] lg:bottom-7 md:left-[38rem] lg:left-[4rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/user.png"
                 alt="User Profile Icon"
@@ -133,7 +133,7 @@ const Header = () => {
           </Link>
 
           <Link href="/usercart" aria-label="Cart">
-            <div className="md:relative md:bottom-12 lg:bottom-7 md:left-[-4.3rem] lg:left-[0rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-[6.7rem] lg:bottom-7 md:left-[34rem] lg:left-[0rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/cart.png"
                 alt="Cart Icon"
