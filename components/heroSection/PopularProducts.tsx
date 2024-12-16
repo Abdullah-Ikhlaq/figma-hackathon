@@ -40,7 +40,7 @@ const PopularProducts = () => {
           </SwiperSlide>
           <SwiperSlide>
             <ProductCard
-              image="SlikVase"
+              image="SilkVase"
               heading="The Silky Vase"
               price="125"
               id="3"
