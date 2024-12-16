@@ -20,13 +20,13 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="relative left-8 w-[900px] h-[584px] md:block hidden">
+      <div className="relative md:left-16 lg:left-8 w-[900px] h-[584px] md:block hidden">
         <Image
           src="/images/hero.png"
           alt="Chair"
           width={200}
           height={200}
-          className="w-[355px] lg:w-[520px] h-[584px]"
+          className="w-[460px] lg:w-[520px] h-[584px]"
         />
       </div>
     </div>

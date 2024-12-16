@@ -247,7 +247,7 @@ const ProductsComponent = () => {
         </div>
       </div>
 
-      <div className="relative lg:bottom-[34rem] lg:w-[1300px] md:w-[880px] w-[390px] h-[625px] grid grid-cols-2 lg:grid-cols-4 gap-[2rem] lg:mx-3.5 lg:gap-[2rem] gap-y-[8rem] md:gap-0 md:mr-20 lg:mr-0 lg:gap-y-[8rem] md:gap-y-[6rem] mt-[6rem] md:mt-8 md:mx-auto">
+      <div className="relative lg:bottom-[34rem] lg:w-[1300px] md:w-[880px] w-[390px] h-[625px] grid grid-cols-2 lg:grid-cols-4 gap-[2rem] lg:mx-3.5 lg:gap-[2rem] gap-y-[8rem] md:gap-0 md:pr-32 lg:pr-0 lg:gap-y-[8rem] md:gap-y-[6rem] mt-[6rem] md:mt-8 md:mx-auto">
         <ProductCard
           image="Vase"
           heading="Rustic Vase Set"
@@ -302,7 +302,7 @@ const ProductsComponent = () => {
         />
       </div>
 
-      <div className="lg:w-[1300px] md:w-[880px] relative lg:bottom-[14rem] w-[390px] h-[625px] grid grid-cols-2 lg:grid-cols-4 gap-[2rem] md:gap-0 md:mr-20 lg:mr-0 md:gap-y-[6rem] gap-y-[8rem] lg:gap-[2rem] mt-[20rem] lg:mx-3.5 md:mt-[25rem] lg:mt-[20rem] md:mx-auto">
+      <div className="lg:w-[1300px] md:w-[880px] relative lg:bottom-[14rem] w-[390px] h-[625px] grid grid-cols-2 lg:grid-cols-4 gap-[2rem] md:gap-0 md:pr-32 lg:pr-0 md:gap-y-[6rem] gap-y-[8rem] lg:gap-[2rem] mt-[20rem] lg:mx-3.5 md:mt-[25rem] lg:mt-[20rem] md:mx-auto">
         <ProductCard
           image="Vase"
           heading="Rustic Vase Set"
