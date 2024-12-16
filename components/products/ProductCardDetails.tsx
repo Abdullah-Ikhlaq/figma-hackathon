@@ -43,19 +43,19 @@ const ProductCardDetails = () => {
   };
 
   return (
-    <div className="relative mx-auto md:w-[1440px] md:h-[2827px] w-[390px] h-[3579px]">
+    <div className="relative lg:w-[1300px] lg:h-[2827px] w-[390px] h-[3579px]">
       {details && (
-        <div className="mt-[6rem] w-[390px] h-[1055px] bg-white flex flex-col md:mt-[8rem] md:flex-row md:gap-[2rem] md:w-[1440px] md:h-[759px]">
-          <div className="md:w-[721px] md:h-[759px] w-[390px] h-[380px]">
+        <div className="mt-[6rem] w-[390px] h-[1055px] bg-white flex flex-col md:mt-[8rem] md:flex-row md:gap-[1.5rem] lg:w-[1300px] lg:h-[759px]">
+          <div className="lg:w-[700px] lg:h-[759px] w-[390px] h-[380px]">
             <Image
               src={`/images/${details.image}.png`}
               alt={`${details.heading} Image`}
               width={200}
               height={200}
-              className="md:w-[721px] md:h-[759px] w-[390px] h-[380px]"
+              className="lg:w-[700px] lg:h-[759px] w-[390px] h-[380px]"
             />
           </div>
-          <div className="md:h-[657px] md:w-[602px] md:m-[2rem] w-[390px] h-[675px] p-[1.5rem]">
+          <div className="lg:h-[657px] lg:w-[600px] lg:m-[1.5rem] w-[390px] h-[675px] p-[1.5rem]">
             <div className="flex mt-2 flex-col gap-[12px]">
               <h3 className="font-clash font-normal leading-[33.6px] text-darkPrimary text-[1.6rem] md:text-5xl">
                 {details.heading}
@@ -142,11 +142,11 @@ const ProductCardDetails = () => {
           </div>
         </div>
       )}
-      <div className="w-[390px] md:mt-[8rem] h-[811px] flex flex-col">
+      <div className="w-[390px] md:mt-[2rem] h-[811px] flex flex-col lg:mx-4">
         <p className="mt-[10rem] leading-[24.6px] text-darkPrimary font-clash font-normal text-xl md:text-3xl">
           You might also like
         </p>
-        <div className="md:w-[1440px] relative w-[390px] h-[625px] grid grid-cols-2 md:grid-cols-4 gap-[2rem] gap-y-[8rem] md:gap-[2rem] mt-[2rem]">
+        <div className="lg:w-[1300px] relative w-[390px] h-[625px] grid grid-cols-2 lg:grid-cols-4 gap-[2rem] gap-y-[8rem] lg:gap-[2rem] mt-[2rem]">
           <ProductCard
             image="Vase"
             heading="Rustic Vase Set"
@@ -176,45 +176,15 @@ const ProductCardDetails = () => {
           />
         </div>
 
-        <div className="relative md:mt-[18rem] hidden md:grid md:grid-cols-4 gap-y-[4rem] md:gap-[2rem] md:w-[1440px]">
-          <ProductCard
-            image="goldenLamp"
-            heading="Rustic Vase Set"
-            price="155"
-            id="5"
-          />
-
-          <ProductCard
-            image="smallVase"
-            heading="The Lucy Lamp"
-            price="399"
-            id="6"
-          />
-
-          <ProductCard
-            image="table"
-            heading="The Silky Vase"
-            price="125"
-            id="7"
-          />
-
-          <ProductCard
-            image="3chairs"
-            heading="The Dandy chair"
-            price="250"
-            id="8"
-          />
-        </div>
-
         <button className="w-full md:relative md:w-[188px] md:left-[36rem] md:-bottom-[2rem] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-darkPrimary font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out mt-[8rem]">
           View collection
         </button>
       </div>
 
-      <div className="relative md:top-[45rem] mt-[26rem] md:mt-0 w-[390px] h-[757px]">
+      <div className="relative lg:top-[4rem] mt-[26rem] lg:mt-0 w-[390px] h-[757px]">
         <Features />
       </div>
-      <div className="relative md:top-[28rem] md:right-4 mt-[12rem] md:mt-[2rem] w-[390px] h-[292px]">
+      <div className="relative lg:bottom-[15rem] lg:mx-2 mt-[12rem] lg:mt-[2rem] w-[390px] h-[292px]">
         <SignUp />
       </div>
     </div>

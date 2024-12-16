@@ -7,7 +7,7 @@ import SignUp from "@/components/heroSection/SignUp";
 
 export default function Home() {
   return (
-    <div className="relative mx-auto w-full sm:w-[390px] sm:h-[4500px] bg-white md:w-full lg:w-[1440px] lg:h-[4160px]">
+    <div className="relative mx-auto w-full sm:w-[390px] sm:h-[4500px] bg-white md:w-full xl:w-[1440px] lg:h-[4160px]">
       <Hero />
       <Features />
       <Listing />

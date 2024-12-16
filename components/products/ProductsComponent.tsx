@@ -25,17 +25,17 @@ const ProductsComponent = () => {
   
 
   return (
-    <div className="flex flex-col md:w-[1440px] md:h-[2439px]">
+    <div className="relative flex flex-col lg:w-[1333px] lg:h-[2439px] ">
       {/* Product Image Section */}
-      <div className="relative md:w-[1440px] md:h-[2439px] w-[390px] h-[146px]">
+      <div className="relative lg:w-[1333px] lg:h-[2439px] w-[390px] h-[146px] ">
         <Image
           src="/images/productBg.png"
           alt="Product Background Image"
           width={200}
           height={200}
-          className="w-[390px] h-[146px] md:w-[1440px] md:h-[209px]"
+          className="w-[390px] h-[146px] lg:w-[1333px] lg:h-[209px]"
         />
-        <h1 className="font-clash font-normal leading-[50.4px] text-white text-3xl md:text-[2.35rem] absolute top-[3.5rem] md:top-[7.9rem]  md:left-[4.8rem] left-[6rem]">
+        <h1 className="font-clash font-normal leading-[50.4px] text-white text-3xl lg:text-[2.2rem] absolute top-[3.5rem] lg:top-[7.9rem]  lg:left-[4.2rem] left-[6rem]">
           All products
         </h1>
       </div>
@@ -97,7 +97,7 @@ const ProductsComponent = () => {
         </div>
       </div>
 
-      <div className="hidden md:flex w-[1440px] justify-between items-center px-4 py-4 bg-lightGray">
+      <div className="hidden md:flex w-[1300px] justify-between items-center px-4 py-4 bg-lightGray">
         {/* Left Side Filters */}
         <div className="flex gap-4">
           {/* Category Filter */}
@@ -247,7 +247,7 @@ const ProductsComponent = () => {
         </div>
       </div>
 
-      <div className="relative md:bottom-[34rem] md:w-[1440px] w-[390px] h-[625px] grid grid-cols-2 md:grid-cols-4 gap-[2rem] md:gap-[2rem] gap-y-[8rem] mt-[6rem]">
+      <div className="relative lg:bottom-[34rem] lg:w-[1300px] w-[390px] h-[625px] grid grid-cols-2 lg:grid-cols-4 gap-[2rem] lg:mx-3.5 lg:gap-[2rem] gap-y-[8rem] mt-[6rem]">
         <ProductCard
           image="Vase"
           heading="Rustic Vase Set"
@@ -272,7 +272,7 @@ const ProductsComponent = () => {
         />
       </div>
 
-      <div className="relative md:bottom-[14rem] hidden md:grid md:grid-cols-4 gap-y-[4rem] md:gap-[2rem] md:w-[1440px]">
+      <div className="relative lg:bottom-[14rem] hidden md:grid lg:grid-cols-4 gap-y-[4rem] lg:gap-[2rem] lg:mx-3.5 lg:w-[1300px]">
         <ProductCard
           image="goldenLamp"
           heading="Rustic Vase Set"
@@ -302,7 +302,7 @@ const ProductsComponent = () => {
         />
       </div>
 
-      <div className="md:w-[1440px] relative md:bottom-[14rem] w-[390px] h-[625px] grid grid-cols-2 md:grid-cols-4 gap-[2rem] gap-y-[8rem] md:gap-[2rem] mt-[20rem]">
+      <div className="lg:w-[1300px] relative lg:bottom-[14rem] w-[390px] h-[625px] grid grid-cols-2 lg:grid-cols-4 gap-[2rem] gap-y-[8rem] lg:gap-[2rem] mt-[20rem] lg:mx-3.5">
         <ProductCard
           image="Vase"
           heading="Rustic Vase Set"

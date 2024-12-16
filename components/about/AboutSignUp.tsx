@@ -1,6 +1,6 @@
 const AboutSignUp = () => {
   return (
-    <div className="relative w-[390px] top-[50rem] md:top-[27.5rem] h-[292px] md:w-[1440px] md:h-[481px] md:mt-[8rem] md:border-[3.5rem] md:border-lightGray bg-white p-4 bottom-[5rem]">
+    <div className="relative w-[390px] top-[50rem] lg:top-[27.5rem] h-[292px] lg:w-[1300px] lg:h-[481px] md:mt-[8rem] md:border-[3.5rem] md:border-lightGray bg-white p-4 bottom-[5rem] lg:mx-4">
       <div className="relative top-[4rem] flex flex-col md:items-center gap-[16px]">
         <h4 className="font-clash text-xl font-normal leading-[28px] md:text-5xl text-[#2a254b]">
           Join the club and get the benefits
