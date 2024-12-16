@@ -25,15 +25,15 @@ const ProductsComponent = () => {
   
 
   return (
-    <div className="relative flex flex-col lg:w-[1333px] lg:h-[2439px] md:h-[2439px] md:w-[980px]">
+    <div className="relative flex flex-col lg:w-[1340px] lg:h-[2439px] md:h-[2439px] md:w-[1000px]">
       {/* Product Image Section */}
-      <div className="relative lg:w-[1333px] lg:h-[2439px] md:w-[980px] w-[390px] h-[146px] ">
+      <div className="relative lg:w-[1340px] lg:h-[2439px] md:w-[1000px] w-[390px] h-[146px] ">
         <Image
           src="/images/productBg.png"
           alt="Product Background Image"
           width={200}
           height={200}
-          className="w-[390px] h-[146px] lg:w-[1333px] lg:h-[209px] md:w-[980px]"
+          className="w-[390px] h-[146px] lg:w-[1340px] lg:h-[209px] md:w-[1000px]"
         />
         <h1 className="font-clash font-normal leading-[50.4px] text-white text-3xl lg:text-[2.2rem] absolute top-[3.5rem] lg:top-[7.9rem]  lg:left-[4.2rem] left-[6rem] md:text-[1.5rem] md:top-[5.1rem] md:left-[3.45rem]"> 
           All products
