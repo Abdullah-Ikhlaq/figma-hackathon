@@ -32,7 +32,7 @@ a tri color grey glaze." />
 a tri color grey glaze." />
      </div>
   <div className="md:hidden mt-16">
-  <ItemCard image="vase" heading="Basic white vase" para="Beautiful and simple this is
+  <ItemCard image="Vase" heading="Basic white vase" para="Beautiful and simple this is
 one for the classics." />
   </div>
 
