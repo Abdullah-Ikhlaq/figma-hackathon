@@ -3,7 +3,7 @@ import FeatureCard from "../reuseableComponents/FeatureCard";
 const Features = () => {
   return (
     <div className="relative lg:w-[1290px] md:w-[890px] lg:h-[335px] mt-[8rem] w-[390px] h-[757px] bg-white flex flex-col gap-[2rem] md:gap-0 lg:gap-[2rem] lg:justify-center lg:mx-8 lg:items-center mx-auto">
-      <h4 className="px-8 font-clash text-2xl font-normal leading-[28px] lg:text-3xl">
+      <h4 className="font-clash text-2xl font-normal leading-[28px] lg:text-3xl md:pb-4 lg:p-0 px-8">
         What makes our brand different
       </h4>
 

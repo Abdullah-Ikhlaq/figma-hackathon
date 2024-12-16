@@ -97,7 +97,7 @@ const ProductsComponent = () => {
         </div>
       </div>
 
-      <div className="hidden md:flex w-[1300px] lg:justify-between md:justify-start md:items-start lg:items-center lg:flex-row flex-col px-4 py-4 bg-lightGray">
+      <div className="hidden md:flex w-[1300px] lg:justify-between md:justify-start md:items-start lg:items-center lg:flex-row flex-col px-4 py-4 ">
         {/* Left Side Filters */}
         <div className="flex gap-4 ">
           {/* Category Filter */}
