@@ -20,7 +20,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="relative   w-[900px] h-[584px] md:block hidden ">
+      <div className="relative left-[2rem]  w-[900px] h-[584px] md:block hidden ">
         <Image
           src="/images/hero.png"
           alt="Chair"
