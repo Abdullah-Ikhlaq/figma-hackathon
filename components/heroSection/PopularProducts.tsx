@@ -9,7 +9,7 @@ import ProductCard from "../reuseableComponents/ProductCard";
 
 const PopularProducts = () => {
   return (
-    <div className="relative mt-[14rem] w-[390px] h-[573px] lg:w-[1440px] md:w-[890px] md:h-[744px] bg-white md:px-[2rem] mx-auto lg:px-0 lg:mx-[1.5rem] md:mt-0 lg:top-[20rem]">
+    <div className="relative mt-[14rem] h-[573px] md:h-[744px] bg-white md:px-[2rem] mx-auto lg:px-0 lg:mx-[1.5rem] md:mt-0 lg:top-[20rem]">
       <h4 className="relative my-4 pl-4 font-clash font-normal leading-[24.6px] text-darkPrimary text-lg lg:text-4xl md:text-3xl lg:bottom-[10rem]">
         Our popular products
       </h4>
@@ -57,7 +57,7 @@ const PopularProducts = () => {
         </Swiper>
       </div>
 
-      <div className="relative hidden lg:bottom-[8rem] lg:w-[1440px] lg:h-[375px] lg:flex gap-[30px] group">
+      <div className="relative hidden lg:bottom-[8rem] lg:h-[375px] lg:flex gap-[30px] group">
         <div
           key="/products/id10"
           className="hidden lg:flex flex-col w-[630px] h-[375px] gap-[2rem]"
@@ -67,7 +67,7 @@ const PopularProducts = () => {
             alt="Sofa Image"
             width={200}
             height={200}
-            className="w-[630px] h-[375px]"
+            className="w-full h-[375px]"
           />
 
           <div className="flex flex-col gap-[8px]">
@@ -80,7 +80,7 @@ const PopularProducts = () => {
           </div>
 
           {/* Add to Cart button */}
-          <button className="w-[160px] lg:w-[629px] absolute bottom-0 right-[31rem] transform -translate-x-1/2 px-4 lg:px-8 py-2 lg:py-4 bg-black/70 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity z-10">
+          <button className="w-[630px] absolute bottom-0 left-[19.7rem] transform -translate-x-1/2 px-4 lg:px-8 py-2 lg:py-4 bg-black/70 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity z-10">
             <Link href={`/products/id10`} className="text-sm lg:text-xl">
               Add to Cart
             </Link>

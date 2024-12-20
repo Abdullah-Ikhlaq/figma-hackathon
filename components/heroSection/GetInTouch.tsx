@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GetInTouch = () => {
   return (
-    <div className="relative w-[390px] h-[828px] lg:w-[1290px] md:w-[890px] lg:h-[603px] bg-white mt-[7rem] md:bottom-[11rem] lg:-bottom-[14rem] mx-auto lg:mx-2">
+    <div className="relative h-[828px] lg:h-[603px] bg-white mt-[7rem] md:bottom-[11rem] lg:-bottom-[14rem] mx-auto lg:mx-2">
       <div className="flex flex-col gap-[16px] p-4 lg:w-[720px] md:w-[850px] ">
         <h4 className="font-clash text-xl font-normal leading-[28px] text-[#2a254b] lg:text-2xl lg:w-[514px] md:w-[600px] md:text-3xl">
           From a studio in London to a global brand with over 400 outlets
@@ -21,13 +21,13 @@ const GetInTouch = () => {
         </div>
       </div>
 
-      <div className="md:relative lg:bottom-[34rem] lg:left-[40rem]">
+      <div className="md:relative lg:bottom-[38rem] lg:left-[43.3em]">
         <Image
           src="/images/SofaWithVase.png"
           alt="Sofa and Vase Image"
           width={200}
           height={200}
-          className="w-[390px] h-[358px] lg:w-[693px] lg:h-[603px] md:h-[555px] md:w-[850px]"
+          className="w-[390px] h-[358px] lg:w-[650px] lg:h-[500px] md:h-[555px] md:w-[850px]"
         />
       </div>
     </div>

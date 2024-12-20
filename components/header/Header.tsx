@@ -12,7 +12,7 @@ const Header = () => {
   const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
   return (
-    <nav className="relative w-full p-6 md:py-6 bg-white">
+    <nav className="relative w-full p-6 md:py-5 bg-white">
       <div className="flex justify-between md:justify-center items-center md:border-b md:border-lightGray">
         {/* Logo */}
         <h1 className="text-2 font-normal font-clash leading-[29.52px] text-darkBlue">
@@ -24,7 +24,7 @@ const Header = () => {
           <button
             onClick={toggleSearch}
             aria-label="Search"
-            className="md:relative md:right-[20rem] lg:right-[44rem] flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-200"
+            className="md:relative md:right-[20rem] lg:right-[33rem] flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-200"
           >
             <CiSearch className="text-lg" />
           </button>
