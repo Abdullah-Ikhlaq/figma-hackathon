@@ -27,7 +27,7 @@ const GetInTouch = () => {
           alt="Sofa and Vase Image"
           width={200}
           height={200}
-          className="w-[390px] h-[358px] lg:w-[650px] lg:h-[500px] md:h-[555px] md:w-[850px]"
+          className="w-[390px] h-[358px] lg:w-[740px] lg:h-[500px] md:h-[555px] md:w-[850px]"
         />
       </div>
     </div>
