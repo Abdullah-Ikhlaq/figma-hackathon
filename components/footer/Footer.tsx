@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="relative w-full md:h-[500px] lg:h-[360px] h-[720px] bottom-0 lg:mx-0 bg-darkPrimary gap-8 md:gap-2 lg:gap-8 md:px-[2rem] mx-auto">
+    <div className="relative w-full md:h-[500px] lg:h-[360px] h-[720px] bottom-0 lg:mx-0 bg-darkPrimary gap-8 md:gap-2 lg:gap-8 md:px-[2rem] mx-auto footer">
       <div className="grid grid-cols-1 lg:grid-cols-2 md:border-b md:border-[#4e4d93] ">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 lg:gap-[5rem] md:-gap-[0rem] md:pr-[18rem] lg:px-6">
           <div>
@@ -41,11 +41,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="md:relative lg:top-[3rem] lg:left-[4rem] md:left-[0rem] md:top-[2rem]">
-          <div className="ml-8 md:ml-0">
+        <div className="md:relative lg:top-[3rem] md:top-[2rem] lg:pl-[4rem] footer-end">
+          <div className="ml-8 md:ml-0 ">
             <FooterHeading name="Join our mailing list" />
           </div>
-          <div className="relative lg:bottom-0 mt-4 flex justify-center pb-6 border-b border-[#4e4d93] md:border-darkPrimary lg:right-[4rem] md:right-[12rem] md:bottom-16">
+          <div className="md:relative lg:bottom-0 mt-5 flex justify-center pb-6 border-b border-[#4e4d93] md:border-darkPrimary lg:right-[4rem] md:right-[6rem] md:bottom-16 footer-signup">
             <input
               type="email"
               placeholder="your@email.com"

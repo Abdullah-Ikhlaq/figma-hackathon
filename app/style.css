@@ -1,0 +1,522 @@
+/* Hero Section Responsiveness*/
+
+@media screen and (max-width:1298px) {
+    .hero-features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-prodcuts{
+        column-gap: 20rem;
+    }
+
+    .hero-product {
+        display: none;
+    }
+
+    .hero-button {
+        left: 20rem;
+  }
+
+  .hero-popular-products {
+    height: 470px;
+  }
+
+  .hero-popular-button {
+    left: 2rem;
+}
+  
+}
+
+@media screen and (max-width:1111px) {
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        width: 550px;
+    }
+
+    .hero > div > div {
+        padding: 0 2rem;
+    }
+
+    .hero-popular-button {
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .hero-product {
+        display: block;
+    }
+
+    .hero-prodcuts {
+        column-gap: 0;
+    }
+
+    .hero-popular {
+        bottom: 0;
+        top: 3rem;
+    }
+
+    .hero-popular-button {
+        top: 8rem;
+        left: 20rem;
+    }
+
+    .hero-signup {
+        margin-top: 10rem;
+        left: 14rem;
+    }
+
+    .hero-touch  {
+        width: 100%;
+        bottom: 0;
+    }
+
+    .hero-touch h4 {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    .hero-touch p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .hero-touch button {
+        width: 200px;
+    }
+
+    .hero-touch .sofa-image {
+        bottom: 78rem;
+    }
+
+    .hero-touch .img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:983px) {
+    .hero h2 {
+        font-size: 1.8rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .hero p {
+        width: 400px;
+        padding-top: 16rem;
+    }
+
+    .hero-features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-prodcuts {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-button {
+        left: 16rem;
+  }
+
+  .hero-popular {
+    gap: 0.5rem;
+  }
+
+  .hero-popular-button {
+    left: 16rem;
+  }
+
+  .hero-signup {
+    left: 10rem;
+    margin-top: 6rem;
+  }
+
+  .footer > div > div {
+    padding-right: 0rem;
+  }
+
+  .footer .footer-signup {
+    left: 1rem;
+  }
+}
+
+
+@media screen and (max-width:850px){
+    .blackChair {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hero {
+        width: 100%;
+    }
+    .hero h2 {
+        font-size: 2.3rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero p {
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    .hero button {
+        width: 200px;
+    }
+
+    .hero-listing {
+        margin-top: 2rem; 
+        bottom: 15rem;
+        margin: 0 2rem;  
+    }
+
+    .hero-button {
+        margin-top: 8rem;
+        left: 10rem;
+    }
+
+    .hero-popular-button {
+        left: 14rem;
+    }
+
+    .hero-signup {
+        left: 8rem;
+    }
+
+    .hero-signup h4 {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .hero-signup p {
+        width: 450px;
+        font-size: 1.2rem;
+    }
+
+    .hero-signup .signup {
+        padding-left: 4rem;
+    }
+
+    .touch-image {
+        width: 100%;
+        padding-top: 3.8rem;
+    }
+
+    .touch-image .img {
+        width: 100%;
+    }
+
+    .footer > div > div {
+        row-gap: 3rem;
+    }
+
+    .footer .footer-signup {
+       justify-content: start;
+       padding-left: 2rem;
+       width: 500px;
+       border-bottom: none;
+      } 
+}
+
+@media screen and (max-width:639px) {
+    .hero {
+        width: 100%;
+    }
+
+    .hero-features {
+        gap: 0;
+        padding: 0 2rem;
+    }
+    .features {
+        padding: 12px;
+        width: 250px;
+    }
+    .features h5 {
+        font-size: 1rem;
+    }
+    .features p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .hero-button {
+        left: 6rem;
+    }
+
+    .hero-popular-button {
+        left: 8rem;
+    }
+
+    .hero-signup {
+        left: 4rem;
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .hero {
+        width: 100%;
+    }
+
+    .hero-feature {
+        margin-top: 3rem;
+    }
+    .hero-features {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        padding: 18px 32px;
+        width: 100%;
+    }
+    .features h5 {
+        font-size: 1.2rem;
+    }
+    .features p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .hero-prodcuts {
+        margin-top: 4rem;
+    }
+    
+    .hero-listing {
+        margin-top: 12rem;
+        margin-left: 12px;
+    }
+
+    .hero-prodcuts {
+        margin-top: 0rem;
+    }
+    
+    .product-card {
+        width: 200px;
+    }
+
+    .product-card h4 {
+        font-size: 1rem;
+    }
+
+    .product-card p {
+        font-size: 0.8rem;
+    }
+
+    .product-card button, .hero-button {
+        width: 200px;
+    }
+
+    .hero-button {
+        margin-top: 2rem;
+        left: 6rem;
+    }
+
+    .hero-popular-button {
+        top: 0rem;
+        left: 5rem;
+        width: 300px;
+    }
+
+    .hero-signup {
+        left: 0rem;
+    }
+
+    .footer-signup {
+        padding-left: 1rem;
+        justify-content: start;
+        flex-wrap: wrap;
+        max-width: 390px;
+    }
+
+    .footer-signup input {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .hero h2 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .hero p {
+        padding-top: 0rem;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 170px;
+    }
+
+    .product-card button {
+        width: 170px;
+        bottom: 7.7rem;
+    }
+
+    .hero-listing {
+        margin-top: 18rem;
+    }
+
+    .hero-prodcuts {
+        row-gap: 10rem;
+    }
+
+    .hero-button {
+        margin-top: 4rem;
+    }
+
+    .hero-popular-button {
+        margin-top: 2rem;
+        width: 200px;
+        left: 6rem;
+    }
+
+    .hero-signup h4 {
+        font-size: 1.3rem;
+        padding-left: 2rem;
+    }
+
+    .hero-signup p {
+        width: 350px;
+        font-size: 0.8rem;
+        padding-left: 3rem;
+    }
+
+    .hero-signup .signup {
+        padding-left: 2rem;
+    }
+
+    .hero-touch {
+        bottom: 6rem;
+    }
+
+    .touch-image {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-listing {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 0;
+        top: 8rem; 
+    }
+
+    .hero-listing h4 {
+        font-size: 1.5rem;
+    }
+
+    .product-card {
+        width: 140px;
+    }
+
+    .product-card .img{
+        width: 140px;
+        height: 180px;
+    }
+
+    .hero-popular {
+        row-gap: 0rem;
+    }
+
+    .product-card h4 {
+        font-size: 1rem;
+    }
+
+    .product-card button {
+        width: 140px;
+        left: 4.4rem;
+    }
+
+    .hero-button {
+        margin-top: 0rem;
+        left: 2rem;
+        bottom: 3rem;
+    }
+
+    .popular-product {
+        margin-top: 30rem;
+    }
+
+    .popular-heading {
+        font-size: 1.4rem;
+    }
+
+    .hero-popular-button {
+        margin-top: 0;
+        position: none;
+        width: 200px;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-signup {
+        margin-top: 0;
+    }
+
+    .hero-signup h4 {
+        font-size: 1.2rem;
+        padding-left: 0rem;
+    }
+
+    .hero-signup p {
+        width: 300px;
+        font-size: 0.8rem;
+        text-align: left;
+        padding-left: 0rem;
+    }
+
+    .hero-signup .signup {
+        padding-left: 0rem;
+    }
+
+    .hero-signup .signup input {
+        width: 150px;
+    }
+
+    .hero-signup .signup button {
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .footer-signup input::placeholder, .hero-signup .signup input::placeholder {
+        font-size: 12px;
+    }
+
+    .footer-signup {
+        padding-left: 0.3rem;
+    }
+
+    .footer-signup input {
+        width: 140px;
+    }
+
+    .footer-signup button {
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .footer-signup {
+        max-width: 310px;
+    }
+}

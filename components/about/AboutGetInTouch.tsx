@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutGetInTouch = () => {
   return (
-    <div className="relative w-[390px] h-[836px] lg:w-[1333px] md:w-[890px] md:mx-auto lg:mx-0 lg:h-[603px] bg-lightGray flex top-[14rem] flex-col-reverse lg:flex-row-reverse lg:top-[8rem] md:top-[30rem] md:justify-center md:items-center lg:justify-normal lg:items-start">
+    <div className="relative h-[836px] w-full md:mx-auto lg:mx-0 lg:h-[603px] bg-lightGray flex top-[14rem] flex-col-reverse lg:flex-row-reverse lg:top-[8rem] md:top-[30rem] md:justify-center md:items-center lg:justify-normal lg:items-start">
       <div className="flex flex-col gap-[16px] p-4 lg:w-[720px] md:w-[630px] mt-[5rem] px-8 md:px-0 lg:px-[7rem] md:mt-[1rem] lg:mt-[5rem]">
         <h4 className="font-clash text-2xl font-normal leading-[28px] text-[#2a254b] md:text-[1.5rem] md:w-[514px]">
           Our service isn&apos;t just personal, it&apos;s actually hyper

@@ -25,7 +25,7 @@ const ProductsComponent = () => {
   
 
   return (
-    <div className="relative flex flex-col lg:w-[1350px] lg:h-[2439px] md:h-[2439px] md:w-[1005px]">
+    <div className="relative flex flex-col w-full lg:h-[2439px] md:h-[2439px]">
       {/* Product Image Section */}
       <div className="relative lg:w-[1350px] lg:h-[2439px] md:w-[1005px] w-[390px] h-[146px] ">
         <Image

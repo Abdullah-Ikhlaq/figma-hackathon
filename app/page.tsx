@@ -7,7 +7,7 @@ import SignUp from "@/components/heroSection/SignUp";
 
 export default function Home() {
   return (
-    <div className="relative mx-auto w-full max-h-[4500px] md:max-h-[4160px]">
+    <div className="relative mx-auto w-full max-h-[4500px] md:max-h-[4160px] overflow-hidden ">
       <Hero />
       <Features />
       <Listing />

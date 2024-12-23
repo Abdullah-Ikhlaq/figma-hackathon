@@ -43,7 +43,7 @@ const ProductCardDetails = () => {
   };
 
   return (
-    <div className="relative lg:w-[1300px] md:w-[980px] lg:h-[2827px] w-[390px] h-[3579px] mx-auto lg:mx-0 md:mx-auto ">
+    <div className="relative w-full lg:h-[2827px] h-[3579px] mx-auto lg:mx-0 md:mx-auto ">
       {details && (
         <div className=" mt-[6rem] w-[390px] h-[1055px] bg-white flex flex-col md:mt-[8rem] lg:flex-row md:gap-[1.5rem] lg:w-[1300px] md:w-[980px] lg:h-[759px] ">
           <div className="lg:w-[700px] md:w-full lg:h-[759px] md:h-[600px] w-[390px] h-[380px]">

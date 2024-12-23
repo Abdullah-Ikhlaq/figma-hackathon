@@ -2,7 +2,7 @@ import AboutFeatureCard from "../reuseableComponents/AboutFeatureCard";
 
 const AboutBrand = () => {
   return (
-    <div className="relative lg:w-[1300px] lg:h-[335px] top-[25rem] lg:top-[25rem] md:top-[45rem] md:w-[880px] w-[390px] h-[757px] bg-white flex flex-col gap-[2rem] md:px-[3rem] lg:p-0 md:mx-auto lg:mx-5 lg:justify-center lg:items-center">
+    <div className="relative lg:h-[335px] top-[25rem] lg:top-[25rem] md:top-[45rem] w-full h-[757px] bg-white flex flex-col gap-[2rem] md:px-[3rem] lg:p-0 md:mx-auto lg:mx-5 lg:justify-center lg:items-center">
       <h4 className="px-8 font-clash text-2xl font-normal leading-[28px] md:text-3xl">
         What makes our brand different
       </h4>

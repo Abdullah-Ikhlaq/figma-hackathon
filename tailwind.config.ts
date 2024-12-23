@@ -20,7 +20,12 @@ const config: Config = {
         clash: ["Clash Display", "sans-serif"],
         clash2: ["Clash Display 2", "sans-serif"],
         satoshi: ["Satoshi", "sans-serif"],
-      }
+      },
+      screens: {
+        xs: { max : '639px'},
+        xxs: { max : '534px'},
+    },
+
     },
   },
   plugins: [],

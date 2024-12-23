@@ -2,12 +2,12 @@ import FeatureCard from "../reuseableComponents/FeatureCard";
 
 const Features = () => {
   return (
-    <div className="relative lg:h-[335px] mt-[8rem] w-full h-[757px] bg-white flex flex-col gap-[2rem] md:gap-0 lg:gap-[2rem] lg:justify-center lg:mx-8 lg:items-center mx-auto">
+    <div className="relative lg:h-[335px] mt-[8rem] w-full h-[757px] bg-white flex flex-col gap-[2rem] md:gap-0 lg:gap-[2rem] lg:justify-center lg:mx-auto lg:items-center mx-auto sm:mx-6 hero-feature">
       <h4 className="font-clash text-2xl font-normal leading-[28px] lg:text-3xl md:pb-4 lg:p-0 px-8">
         What makes our brand different
       </h4>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:pr-0 md:pr-[3rem]">
+      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:pr-0 md:pr-[3rem] lg:gap-8 hero-features">
         <FeatureCard
           image="Delivery"
           heading="Next day as standard"
