@@ -102,7 +102,7 @@ const PopularProducts = () => {
         />
       </div>
 
-      <div className="relative lg:-left-[4rem] lg:top-[4rem] flex lg:justify-center mt-0 md:mt-[4rem] lg:mt-0 md:left-[12rem] hero-popular-button">
+      <div className="relative lg:-left-[2rem] lg:top-[4rem] flex lg:justify-center mt-0 md:mt-[4rem] lg:mt-0 md:left-[12rem] hero-popular-button">
         <button className=" m-2 mt-4 w-[309px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-[#2a254b] font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out text-lg ">
           View collection
         </button>

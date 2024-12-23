@@ -33,7 +33,7 @@ const Listing = () => {
        </div>
       </div>
 
-      <button className="relative md:top-[15rem] lg:left-[32rem] md:left-[10rem] m-2 w-[309px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-[#2a254b] font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out text-lg hero-button">
+      <button className="relative md:top-[15rem] lg:left-[30rem] md:left-[10rem] m-2 w-[309px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-[#2a254b] font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out text-lg hero-button">
         View collection
       </button>
     </div>
