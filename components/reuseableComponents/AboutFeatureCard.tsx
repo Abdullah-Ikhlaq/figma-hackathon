@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutFeatureCard: React.FC<CardProps> = ({ image, heading, para }) => {
   return (
-    <div className="p-8 flex border border-transparent flex-col gap-4 hover:bg-gray-300 hover:border-darkPrimary transition-all duration-300 ease-in-out rounded bg-lightGray  w-full md:p-2 md:py-8 lg:py-8 lg:px-8 md:mx-4 lg:mx-0">
+    <div className="border border-transparent hover:bg-gray-300 hover:border-darkPrimary bg-lightGray p-8 flex  flex-col gap-4 hover:bg-lightGray transition-all duration-300 ease-in-out rounded w-[300px] md:mx-4 lg:mx-0 features">
       <Image
         src={`/images/${image}.png`}
         alt={`${image} Icon Image`}

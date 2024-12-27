@@ -20,7 +20,7 @@ const PopularProducts = () => {
           autoplay={{ delay: 2000, disableOnInteraction: true }}
           loop={true}
           slidesPerView={2}
-          spaceBetween={16}
+          spaceBetween={0}
         >
           <SwiperSlide>
             <ProductCard
@@ -57,10 +57,10 @@ const PopularProducts = () => {
         </Swiper>
       </div> 
 
-      <div className="relative hidden md:bottom-[8rem] md:h-[375px] md:flex gap-[30px] hero-popular">
+      <div className="relative hidden md:bottom-[8rem] md:h-[375px] md:flex gap-4 hero-popular">
         <div
           key="/products/id10"
-          className="hidden md:flex flex-col w-[630px] h-[375px] gap-[2rem] hero-popular-products"
+          className="hidden md:flex flex-col w-[630px] h-[375px] gap-2 hero-popular-products  group"
         >
           <Image
             src={`/images/sofa.png`}
@@ -80,7 +80,7 @@ const PopularProducts = () => {
           </div>
 
           {/* Add to Cart button */}
-          <button className="w-[630px] absolute bottom-0 left-[19.7rem] transform -translate-x-1/2 px-4 lg:px-8 py-2 lg:py-4 bg-black/70 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity z-10">
+          <button className="w-[630px] relative bottom-[8.7rem] left-[19.7rem] transform -translate-x-1/2 px-4 md:px-8 py-2 md:py-4  bg-black/70 rounded text-white opacity-0  group-hover:opacity-100 transition-opacity">
             <Link href={`/products/id10`} className="text-sm lg:text-xl">
               Add to Cart
             </Link>

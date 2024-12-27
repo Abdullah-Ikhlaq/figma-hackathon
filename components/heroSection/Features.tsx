@@ -7,7 +7,7 @@ const Features = () => {
         What makes our brand different
       </h4>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:pr-0 md:pr-[3rem] lg:gap-8 hero-features">
+      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:pr-[3rem] lg:pr-0 lg:gap-8 hero-features">
         <FeatureCard
           image="Delivery"
           heading="Next day as standard"

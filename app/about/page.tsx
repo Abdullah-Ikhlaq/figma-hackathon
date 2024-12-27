@@ -6,7 +6,7 @@ import AboutSignUp from "@/components/about/AboutSignUp";
 
 const About = () => {
   return (
-    <div className="relative mx-auto w-[390px] h-[3911px] md:w-full xl:w-[1440px] xl:h-[2960px] bg-white">
+    <div className="relative mx-auto h-[3911px] w-full xl:h-[2960px] bg-white overflow-hidden about">
       <AboutSection />
       <AboutFeatures />
       <AboutGetInTouch />

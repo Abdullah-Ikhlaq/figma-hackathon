@@ -2,12 +2,12 @@ import AboutFeatureCard from "../reuseableComponents/AboutFeatureCard";
 
 const AboutBrand = () => {
   return (
-    <div className="relative lg:h-[335px] top-[25rem] lg:top-[25rem] md:top-[45rem] w-full h-[757px] bg-white flex flex-col gap-[2rem] md:px-[3rem] lg:p-0 md:mx-auto lg:mx-5 lg:justify-center lg:items-center">
-      <h4 className="px-8 font-clash text-2xl font-normal leading-[28px] md:text-3xl">
+    <div className="relative sm:h-[335px] top-[25rem] sm:top-[25rem] w-full h-[757px] bg-white flex flex-col gap-[2rem] sm:p-0 mx-auto sm:mx-5 lg:justify-center lg:items-center about-brand sm:ml-0">
+      <h4 className="px-8 font-clash text-2xl font-normal leading-[28px] sm:text-3xl">
         What makes our brand different
       </h4>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[5rem] md:gap-[1rem] md:gap-y-[6rem] lg:gap-[5rem]">
+      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 lg:gap-6 about-brands">
         <AboutFeatureCard
           image="Delivery"
           heading="Next day as standard"
