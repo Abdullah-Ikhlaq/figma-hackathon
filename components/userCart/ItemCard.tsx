@@ -17,9 +17,9 @@ const ItemCard: React.FC<CardProps> = ({image, heading, para}) => {
             <p className='py-1 font-satoshi font-normal leading-[21px] text-darkPrimary text-sm'>{para}</p>
             <p className='py-1 font-satoshi font-normal leading-6 text-darkPrimary text-sm'> &#163; 85</p>
           </div>
-            <p className='lg:pl-[28.5rem] w-[122px] h-[46px] px-[16px] py-[12] bg-lightGray font-satoshi font-normal leading-[21.6px] text-darkPrimary text-lg mt-2'> 1 </p>
+            <p className='lg:pl-[28.5rem] w-[122px] h-[46px] px-[16px] py-[12] bg-lightGray font-satoshi font-normal leading-[21.6px] text-darkPrimary text-lg mt-2  quantity'> 1 </p>
 
-            <p className='hidden lg:w-[100px] lg:block lg:pl-[20.5rem] md:py-0 py-1 font-satoshi font-normal leading-6 text-darkPrimary text-lg'>&#163; 85</p>
+            <p className='hidden lg:w-[100px] lg:block lg:pl-[20.5rem] md:py-0 py-1 font-satoshi font-normal leading-6 text-darkPrimary text-lg price'>&#163; 85</p>
         </div>
     </div>
     
