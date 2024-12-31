@@ -112,10 +112,10 @@ const ProductCardDetails = () => {
               </div>
             </div>
             <div className=" mt-2 flex flex-col md:flex-row gap-[12px] detail-quantity-cart">
-              <h5 className="relative mt-2 font-clash font-normal leading-[22.4px] text-darkPrimary text-lg md:text-xl lg:text-2xl md:top-10 ">
+              <h5 className="relative mt-2 font-clash font-normal leading-[22.4px] text-darkPrimary text-lg md:text-xl lg:text-2xl md:top-10 md:mr-12">
                 Quantity
               </h5>
-              <div className="relative lg:right-10 lg:top-5 mt-4 lg:mt-4 md:mt-10 flex items-center lg:justify-center space-x-4 bg-lightGray  w-full quantity-btn">
+              <div className="relative lg:right-10 lg:top-5 mt-4 lg:mt-4 md:mt-10 flex items-center lg:justify-center space-x-4 md:space-x-0 bg-lightGray md:w-32 w-full quantity-btn">
               
 
               <button
@@ -125,13 +125,13 @@ const ProductCardDetails = () => {
                   <p className="text-xl md:pl-0 pl-[4rem] pb-3">_</p>
                 </button>
 
-                <div className="text-xl text-darkPrimary ">{quantity}</div>
+                <div className="text-xl text-darkPrimary px-2">{quantity}</div>
 
                 <button
                   onClick={increase}
                   className="bg-lightGray text-darkPrimary hover:bg-darkPrimary hover:text-white p-2 rounded w-full md:w-[50px]"
                 >
-                  <p className="text-xl md:pr-0 pr-[4rem]">+</p>
+                  <p className="text-xl md:pr-0 pr-[4rem] py-1.5">+</p>
                 </button>
 
               </div>
@@ -142,7 +142,7 @@ const ProductCardDetails = () => {
           </div>
         </div>
       )}
-      <div className="w-full md:mt-[2rem] h-[811px] flex flex-col md:mx-8 lg:mx-4 detail-products">
+      <div className="w-full md:mt-[2rem] h-[811px] flex flex-col md:mx-8 lg:mx-4 xl:mx-7 detail-products">
         <h5 className="mt-[10rem] lg:mt-[10rem] md:mt-[15rem] leading-[24.6px] text-darkPrimary font-clash font-normal text-xl md:text-2xl lg:text-3xl">
           You might also like
         </h5>

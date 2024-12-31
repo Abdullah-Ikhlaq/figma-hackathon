@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutFeatures = () => {
   return (
-    <div className="relative w-full md:h-[598px] h-[628px] flex flex-col sm:flex-row p-6 gap-4 mt-[5rem] md:mx-auto lg:px-[4rem] lg:p-6 about-feature">
+    <div className="relative w-full md:h-[598px] h-[628px] flex flex-col sm:flex-row p-6 gap-4 mt-[5rem] md:mx-auto lg:px-[4rem] xl:px-[6rem] lg:p-6 about-feature">
       <div className="sm:w-[634px] sm:h-[478px] bg-darkPrimary p-8 sm:px-2 feature-div">
         <h4 className="font-clash font-normal leading-[28px] text-white text-xl md:text-4xl pb-4 sm:px-[2rem] sm:pt-[3rem]">
           It started with a small idea

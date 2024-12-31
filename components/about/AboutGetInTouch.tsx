@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const AboutGetInTouch = () => {
   return (
-    <div className="relative h-[836px] w-full mx-auto sm:mx-0 sm:h-[603px] bg-lightGray flex top-[14rem] flex-col-reverse sm:flex-row-reverse sm:top-[8rem] justify-center items-center sm:justify-normal sm:items-start about-get-in-touch">
+    <div className="relative h-[836px] w-full mx-auto sm:mx-0 sm:h-[603px] bg-lightGray flex top-[14rem] flex-col-reverse sm:flex-row-reverse sm:top-[8rem] justify-center items-center
+    sm:justify-normal sm:items-start about-get-in-touch">
       <div className="flex flex-col gap-[16px] p-4 md:w-[720px] sm:w-[630px] mt-[5rem] px-8  sm:px-[7rem] sm:mt-[5rem] about-touch">
         <h4 className="font-clash text-2xl font-normal leading-[28px] text-[#2a254b] sm:text-[1.5rem] sm:w-[514px]">
           Our service isn&apos;t just personal, it&apos;s actually hyper

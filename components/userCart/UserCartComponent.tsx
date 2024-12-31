@@ -38,7 +38,7 @@ a tri color grey glaze." />
     <p className="font-satoshi font-normal leading-[21px] text-[#4E4D93] text-right ">Taxes and shipping are calculated at checkout</p>
   </div>
 
-  <button className="relative w-[342px] h-[56px] px-[32px] py-[16px] bg-darkPrimary font-satoshi font-normal leading-[24px] text-white hover:bg-navbarColor mt-12 lg:w-[200px] lg:bottom-10  checkout-btn        ">
+  <button className="relative w-[342px] h-[56px] px-[32px] py-[16px] bg-darkPrimary font-satoshi font-normal leading-[24px] text-white hover:bg-navbarColor mt-12 lg:w-[200px] lg:bottom-10 checkout-btn">
   Go to checkout
   </button>
     </div>

@@ -2,7 +2,7 @@ import ProductCard from "../reuseableComponents/ProductCard";
 
 const Listing = () => {
   return (
-    <div className="relative h-[811px] mx-auto lg:mx-2 lg:h-[761px] bg-white flex flex-col gap-3 py-[3rem] mt-[17rem] lg:mt-[6rem] md:bottom-[25rem] lg:-bottom-32 md:py-0 md:px-4 px-0 hero-listing">
+    <div className="relative h-[811px] mx-auto lg:mx-2 lg:h-[761px] bg-white flex flex-col gap-3 py-[3rem] mt-[17rem] lg:mt-[6rem] md:bottom-[25rem] lg:-bottom-32 md:py-0 md:px-4 xl:mx-8 px-0 hero-listing">
       <h4 className="font-clash font-normal leading-[24.6px] text-darkPrimary text-xl lg:text-4xl xs:text-3xl lg:mb-6 hero-listing-h4">
         New ceramics
       </h4>
