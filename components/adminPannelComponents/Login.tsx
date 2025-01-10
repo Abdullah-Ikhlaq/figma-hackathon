@@ -5,7 +5,7 @@ import Dashboard from "./Dashboard";
 
 // Mock user data for authentication
 const mockUser = {
-  password: "AreNab715",
+  password: process.env.ADMIN_PANNEL_PASSWORD
 };
 
 export default function Login() {
