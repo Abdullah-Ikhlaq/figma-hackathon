@@ -1,46 +1,117 @@
+"use client";
+import { useEffect, useState } from "react";
 import ItemCard from "./ItemCard";
+import Link from "next/link";
 
 const UserCartComponent = () => {
+  const [cartItems, setCartItems] = useState<any[]>([]);
+
+  useEffect(() => {
+    // Fetch items from localStorage
+    const items = JSON.parse(localStorage.getItem("cart") || "[]");
+
+    setCartItems(items.map((item: any) => ({ ...item, quantity: 1 }))); // Default quantity to 1
+  }, []);
+
+  const updateLocalStorage = (updatedCart: any[]) => {
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
+
+  const handleQuantityChange = (id: string, delta: number) => {
+    const updatedCart = cartItems.map((item) => {
+      if (item.id === id) {
+        const newQuantity = item.quantity + delta;
+        return newQuantity > 0 ? { ...item, quantity: newQuantity } : item;
+      }
+      return item;
+    }).filter((item) => item.quantity > 0); // Remove items with quantity 0
+    setCartItems(updatedCart);
+    updateLocalStorage(updatedCart);
+  };
+
+  const handleRemoveItem = (id: string) => {
+    const updatedCart = cartItems.filter((item) => item.id !== id);
+    setCartItems(updatedCart);
+    updateLocalStorage(updatedCart);
+  };
+
+  
+
+  const calculateSubtotal = () =>
+    cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+
   return (
-    <div className="relative bg-lightGray h-[1466px] mx-auto w-full md:h-[1050px] lg:pl-[3rem] md:px-[2rem] lg:px-0 md:py-[2rem] py-4 px-6 user-cart">
-        <h3 className="font-clash font-normal leading-[33.6px] text-darkPrimary mb-4 my-4 text-2xl md:text-4xl ">Your shopping cart</h3>
+    <div className="relative bg-lightGray h-full mx-auto w-full lg:px-0 py-4 px-6 user-cart">
+      <h3 className="mx-10 font-clash font-normal leading-[33.6px] text-darkPrimary my-2 text-2xl md:text-4xl">
+        Your shopping cart
+      </h3>
 
-        <div className="hidden lg:block md:m-[4rem]">
-           <div className="flex relative md:top-[4.2rem] ">
+      <div className="hidden lg:block md:m-[2rem]">
+           <div className="flex relative">
            <p className="pl-[1rem] text-lg font-clash font-normal leading-[19.6px] text-darkPrimary">Product</p>
-            <p className="pl-[33rem] font-clash font-normal text-lg leading-[19.6px] text-darkPrimary quantity-heading">Quantity</p>
-            <p className="pl-[18rem] font-clash font-normal text-lg leading-[19.6px] text-darkPrimary">Total</p>
+            <p className="pl-[23.5rem] font-clash font-normal text-lg leading-[19.6px] text-darkPrimary">Total</p>
            </div>
-            <hr className="bg-lightGray mt-[5rem]"/>
+            <hr className="bg-lightGray"/>
         </div>
-     <div className="mt-12 user-item-cart">
-     <ItemCard image="graystoneVase" heading="Graystone vase" para="A timeless ceramic vase with 
-a tri color grey glaze." />
-     </div>
-  <div className="mt-12 md:hidden">
-  <ItemCard image="whiteVase" heading="Basic white vase" para="Beautiful and simple this is
-one for the classics." />
-  </div>
 
-  <div className="mt-20 ">
-     <ItemCard image="goldenLamp" heading="Graystone vase" para="A timeless ceramic vase with 
-a tri color grey glaze." />
-     </div>
+      <div className="mx-4 flex justify-between mt-8 gap-4">
+        {/* Left side: Products List */}
+        <div className="w-2/3">
+          {cartItems.length > 0 ? (
+            cartItems.map((item) => (
+              <ItemCard
+                key={item.id}
+                image={item.image}
+                heading={item.heading}
+                price={Number(item.price)}
+                quantity={item.quantity}
+                onIncrease={() => handleQuantityChange(item.id, 1)}
+                onDecrease={() => handleQuantityChange(item.id, -1)}
+                onRemove={() => handleRemoveItem(item.id)}
+              />
+            ))
+          ) : (
+            <p className="text-center text-gray-500 mt-4">Your cart is empty.</p>
+          )}
+        </div>
 
-     <div className="mt-20">
-     <ItemCard image="3chairs" heading="Graystone vase" para="A timeless ceramic vase with 
-a tri color grey glaze." />
-     </div>
+        {/* Right side: Subtotal & Summary */}
+        <div className="w-1/3 p-4 bg-white rounded-lg shadow-md mx-4">
+          <h4 className="font-clash text-darkPrimary text-xl mb-4">Summary</h4>
+          <div className="space-y-4">
+            {/* List products and their prices */}
+            {cartItems.map((item) => (
+              <div className="flex justify-between" key={item.id}>
+                <p className="font-satoshi text-lg text-darkPrimary">
+                  {item.quantity} x {item.heading}
+                </p>
+                <p className="font-satoshi text-lg text-darkPrimary">
+                  £{(item.price * item.quantity).toFixed(2)}
+                </p>
+              </div>
+            ))}
+          </div>
 
-  <hr className="bg-white mt-16 w-full md:m-[4rem]"/>
-  <div className="text-right h-[62px] mt-8 lg:pr-36 md:pr-[14rem] sub-total">
-    <p className="h-[34px] font-clash font-normal left-7 text text-[#4E4D93] text-right text-xl ">Subtotal <span className="text-darkPrimary">&#163; 425</span></p>
-    <p className="font-satoshi font-normal leading-[21px] text-[#4E4D93] text-right ">Taxes and shipping are calculated at checkout</p>
-  </div>
+          {/* Total and other details */}
+          <div className="flex justify-between mt-6">
+            <p className="font-satoshi text-lg text-darkPrimary">Subtotal</p>
+            <p className="font-satoshi text-lg text-darkPrimary">£{calculateSubtotal().toFixed(2)}</p>
+          </div>
+          <div className="flex justify-between">
+            <p className="font-satoshi text-lg text-darkPrimary">Taxes & Shipping</p>
+            <p className="font-satoshi text-lg text-darkPrimary">Calculated at checkout</p>
+          </div>
 
-  <button className="relative w-[342px] h-[56px] px-[32px] py-[16px] bg-darkPrimary font-satoshi font-normal leading-[24px] text-white hover:bg-navbarColor mt-12 lg:w-[200px] lg:bottom-10 checkout-btn">
-  Go to checkout
-  </button>
+          <div className="flex justify-between items-center mt-6">
+            <button className="px-6 py-2 bg-darkPrimary text-white rounded-md hover:bg-navbarColor">
+              Go to checkout
+            </button>
+            <button className="px-6 py-2 bg-darkPrimary text-white rounded-md hover:bg-navbarColor">
+              <Link href="/products">Continue Shopping</Link>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

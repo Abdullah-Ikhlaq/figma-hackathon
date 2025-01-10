@@ -67,18 +67,6 @@ const Header = () => {
           href="/"
           className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          Plant Pots
-        </Link>
-        <Link
-          href="/"
-          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
-        >
-          Ceramics
-        </Link>
-        <Link
-          href="/"
-          className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
-        >
           Tables
         </Link>
         <Link
@@ -92,12 +80,6 @@ const Header = () => {
           className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
         >
           Crockery
-        </Link>
-        <Link
-          href="/"
-          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
-        >
-          Tableware
         </Link>
         <Link
           href="/"
@@ -117,11 +99,17 @@ const Header = () => {
         >
           About
         </Link>
+        <Link
+          href="/admin"
+          className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
+        >
+          Admin Pannel
+        </Link>
 
         <div className="flex gap-4 justify-center">
           {/* User Icon */}
           <Link href="/" aria-label="User Profile">
-            <div className="md:relative md:bottom-[6.7rem] lg:bottom-7 md:left-[38rem] lg:left-[4rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-[5rem] lg:bottom-7 md:left-[3rem] lg:left-[-1rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/user.png"
                 alt="User Profile Icon"
@@ -133,7 +121,7 @@ const Header = () => {
           </Link>
 
           <Link href="/usercart" aria-label="Cart">
-            <div className="md:relative md:bottom-[6.7rem] lg:bottom-7 md:left-[34rem] lg:left-[0rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
+            <div className="md:relative md:bottom-[5rem] lg:bottom-7 md:left-[2.5rem] lg:left-[-2rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
                 src="/images/cart.png"
                 alt="Cart Icon"

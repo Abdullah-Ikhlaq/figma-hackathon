@@ -14,12 +14,11 @@ export async function getData() {
 }
 
 const ProductCardDetails = () => {
-  const params = useParams();
-  const id = params.id;
-  const productId = id;
-
+  const params = useParams(); // Getting the route parameter
+  const productId = params.id;
   const [details, setDetails] = useState<CardProps | null>(null);
-  const [quantity, setQuantity] = useState<number>(0);
+  const [quantity, setQuantity] = useState<number>(1); // Default quantity set to 1
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // Modal state
 
   useEffect(() => {
     const fetchProductDetails = async () => {
@@ -28,20 +27,49 @@ const ProductCardDetails = () => {
         (item: CardProps) => item.id === productId
       );
       setDetails(productDetails);
-      console.log("product Details", productId, id, productDetails);
+      console.log("product Details", productId, productDetails);
     };
 
     fetchProductDetails();
   }, [productId]);
 
   const increase = () => setQuantity(quantity + 1);
-
   const decrease = () => {
-    if (quantity > 0) {
-      setQuantity(quantity - 1);
-    }
+    if (quantity > 1) setQuantity(quantity - 1); // Prevent going below 1
   };
 
+  // Handle Add to Cart functionality
+  const handleAddToCart = () => {
+    const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    
+    // Check if the product already exists in the cart
+    const existingProductIndex = existingCart.findIndex((item: any) => item.id === productId);
+
+    if (existingProductIndex !== -1) {
+      // Update the quantity of the existing product
+      existingCart[existingProductIndex].quantity += quantity;
+    } else {
+      // Add the new product with the selected quantity
+      existingCart.push({
+        id: productId,
+        heading: details?.heading,
+        price: details?.price,
+        quantity,
+        image: details?.image,
+      });
+    }
+
+    // Save the updated cart to localStorage
+    localStorage.setItem("cart", JSON.stringify(existingCart));
+
+    // Show the modal for the product added to cart
+    setIsModalOpen(true);
+
+    // Close the modal after 3 seconds
+    setTimeout(() => {
+      setIsModalOpen(false);
+    }, 3000);
+  };
   return (
     <div className="relative w-full lg:h-[2827px] h-[3579px] mx-auto lg:mx-0 md:mx-auto ">
       {details && (
@@ -55,12 +83,12 @@ const ProductCardDetails = () => {
               className="w-full md:h-[759px] h-[380px] detail-img"
             />
           </div>
-          <div className="lg:h-[657px] md:w-[45%] w-full lg:m-[1.5rem] h-[675px] p-[1.5rem] detail-div">
-            <div className="flex mt-2 flex-col gap-[12px]">
-              <h3 className="font-clash font-normal leading-[33.6px] text-darkPrimary text-[1.6rem] lg:text-5xl md:text-4xl">
+          <div className="lg:h-[657px] md:w-[45%] w-full lg:mx-[1.5rem] h-[675px] p-[1.5rem] detail-div">
+            <div className="flex flex-col gap-[12px]">
+              <h3 className="font-clash font-normal leading-[33.6px] text-darkPrimary text-[1.6rem] lg:text-4xl md:text-3xl">
                 {details.heading}
               </h3>
-              <h4 className="font-clash font-normal leading-7 mt-1 md:mt-0 text-darkPrimary text-xl lg:text-4xl md:text-3xl">
+              <h4 className="font-clash font-normal leading-7 mt-1 md:mt-0 text-darkPrimary text-xl lg:text-3xl md:text-2xl">
                 {" "}
                 &#163; {details.price}
               </h4>
@@ -111,11 +139,11 @@ const ProductCardDetails = () => {
                 </h6>
               </div>
             </div>
-            <div className=" mt-2 flex flex-col md:flex-row gap-[12px] detail-quantity-cart">
-              <h5 className="relative mt-2 font-clash font-normal leading-[22.4px] text-darkPrimary text-lg md:text-xl lg:text-2xl md:top-10 md:mr-12">
+            <div className=" flex flex-col gap-[12px] ">
+              <h5 className="relative font-clash font-normal leading-[22.4px] text-darkPrimary text-lg md:text-xl lg:text-2xl md:top-10">
                 Quantity
               </h5>
-              <div className="relative lg:right-10 lg:top-5 mt-4 lg:mt-4 md:mt-10 flex items-center lg:justify-center space-x-4 md:space-x-0 bg-lightGray md:w-32 w-full quantity-btn">
+              <div className="relative lg:top-5 mt-4 lg:mt-4 md:mt-10 flex items-center lg:justify-center space-x-4 md:space-x-0 bg-lightGray md:w-32 w-full quantity-btn">
               
 
               <button
@@ -135,13 +163,57 @@ const ProductCardDetails = () => {
                 </button>
 
               </div>
-              <button className="relative md:top-5 md:w-[250px] mt-4 w-full bg-darkPrimary px-[32px] py-[16px] font-satoshi font-normal leading-6 text-white hover:bg-navbarColor md:h-[4rem] add-to-cart">
-                Add to cart
+              <div className="mt-4 flex gap-2">
+              <button
+                onClick={handleAddToCart}
+                className="relative md:top-5 md:w-[250px] w-full bg-darkPrimary px-[32px] py-[10px] font-satoshi font-normal leading-6 text-white hover:bg-navbarColor md:h-[3rem] add-to-cart"
+              >
+                Add to Cart
               </button>
+
+              <button
+                onClick={() => window.location.href = '/products'}
+                className="relative md:top-5 md:w-[250px] w-full bg-lightGray px-[32px] py-[10px] font-satoshi font-normal leading-6 text-darkPrimary hover:bg-darkPrimary hover:text-white md:h-[3rem] see-less"
+              >
+                See Less
+              </button>
+            </div>
             </div>
           </div>
         </div>
       )}
+
+        {/* Popup Modal */}
+        {isModalOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-6 rounded-lg text-center">
+            <h3 className="text-xl text-darkPrimary">Product added to cart!</h3>
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="mt-4 px-6 py-2 bg-darkPrimary text-white rounded-full"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Popup Modal */}
+      {isModalOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-6 rounded-lg text-center">
+            <h3 className="text-xl text-darkPrimary">{details?.heading} added to cart!</h3>
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="mt-4 px-6 py-2 bg-darkPrimary text-white rounded-full"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
+
       <div className="w-full md:mt-[2rem] h-[811px] flex flex-col md:mx-8 lg:mx-4 xl:mx-7 detail-products">
         <h5 className="mt-[10rem] lg:mt-[10rem] md:mt-[15rem] leading-[24.6px] text-darkPrimary font-clash font-normal text-xl md:text-2xl lg:text-3xl">
           You might also like
@@ -150,28 +222,28 @@ const ProductCardDetails = () => {
           <ProductCard
             image="Vase"
             heading="Rustic Vase Set"
-            price="155"
+            price={155}
             id="1"
           />
 
           <ProductCard
             image="lamp"
             heading="The Lucy Lamp"
-            price="399"
+            price={399}
             id="2"
           />
 
           <ProductCard
             image="SilkVase"
             heading="The Silky Vase"
-            price="125"
+            price={125}
             id="3"
           />
 
           <ProductCard
             image="BlackChair"
             heading="The Dandy chair"
-            price="250"
+            price={250}
             id="4"
           />
         </div>

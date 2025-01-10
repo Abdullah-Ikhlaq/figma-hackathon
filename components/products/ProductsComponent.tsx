@@ -35,7 +35,7 @@ const ProductsComponent = () => {
           height={200}
           className="w-full h-[146px] lg:h-[209px]"
         />
-        <h1 className="font-clash font-normal leading-[50.4px] text-white text-3xl lg:text-[2.1rem] absolute top-[3.5rem] lg:top-[7.7rem] xl:left-[5rem] xl:text-[2.27rem] lg:left-[4.5rem] left-[6rem] md:text-[1.5rem] md:top-[5.1rem] md:left-[3.45rem]"> 
+        <h1 className="font-clash font-normal leading-[50.4px] text-white text-3xl lg:text-[1.9rem] absolute top-[3.5rem] lg:top-[7.7rem] xl:left-[5rem] xl:text-[2.27rem] lg:left-[3.5rem] left-[6rem] md:text-[1.5rem] md:top-[5.1rem] md:left-[3.45rem]"> 
           All products
         </h1>
       </div>
@@ -251,23 +251,23 @@ const ProductsComponent = () => {
         <ProductCard
           image="Vase"
           heading="Rustic Vase Set"
-          price="155"
+          price={155}
           id="1"
         />
 
-        <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2" />
+        <ProductCard image="lamp" heading="The Lucy Lamp" price={399} id="2" />
 
         <ProductCard
           image="SilkVase"
           heading="The Silky Vase"
-          price="125"
+          price={125}
           id="3"
         />
 
         <ProductCard
           image="BlackChair"
           heading="The Dandy chair"
-          price="250"
+          price={250}
           id="4"
         />
       </div>
@@ -276,28 +276,28 @@ const ProductsComponent = () => {
         <ProductCard
           image="goldenLamp"
           heading="Rustic Vase Set"
-          price="155"
+          price={155}
           id="5"
         />
 
         <ProductCard
           image="smallVase"
           heading="The Lucy Lamp"
-          price="399"
+          price={399}
           id="6"
         />
 
         <ProductCard
           image="table"
           heading="The Silky Vase"
-          price="125"
+          price={125}
           id="7"
         />
 
         <ProductCard
           image="3chairs"
           heading="The Dandy chair"
-          price="250"
+          price={250}
           id="8"
         />
       </div>
@@ -306,29 +306,29 @@ const ProductsComponent = () => {
         <ProductCard
           image="Vase"
           heading="Rustic Vase Set"
-          price="155"
+          price={155}
           id="1"
         />
 
-        <ProductCard image="lamp" heading="The Lucy Lamp" price="399" id="2" />
+        <ProductCard image="lamp" heading="The Lucy Lamp" price={399} id="2" />
 
         <ProductCard
           image="SilkVase"
           heading="The Silky Vase"
-          price="125"
+          price={125}
           id="3"
         />
 
         <ProductCard
           image="BlackChair"
           heading="The Dandy chair"
-          price="250"
+          price={250}
           id="4"
         />
       </div>
 
       <div className="px-[2rem] product-sec-btn">
-        <button className="w-full md:relative mt-[12rem] lg:bottom-[6rem] md:-bottom-[21rem] md:left-[16rem] lg:left-[34rem] xl:left-[36rem] md:mt-0 md:w-[200px] md:h-[56px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-darkPrimary font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out">
+        <button className="w-full md:relative mt-[12rem] lg:bottom-[3rem] md:-bottom-[21rem] md:left-[16rem] lg:left-[34rem] xl:left-[36rem] md:mt-0 md:w-[200px] md:h-[56px] py-[16px] px-[32px] bg-lightGray bg-opacity-[15%] leading-6 text-darkPrimary font-satoshi font-normal hover:bg-darkPrimary hover:text-white transition-all duration-300 ease-in-out ">
           <Link href="/ ">View collection</Link>
         </button>
       </div>
