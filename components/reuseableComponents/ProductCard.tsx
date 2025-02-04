@@ -40,8 +40,7 @@ const ProductCard: React.FC<CardProps> = ({ image, heading, price, id }) => {
         </p>
       </div>
 
-      <div className="flex justify-between items-center gap-2 mt-2">
-        {/* Add to Cart button */}
+      {/* <div className="flex justify-between items-center gap-2 mt-2">
         <button
           onClick={handleAddToCart}
           className="w-[120px] xs:w-[120px] sm:w-[120px] rounded px-4 py-2 bg-black/70 text-white hover:bg-gray-900"
@@ -49,16 +48,14 @@ const ProductCard: React.FC<CardProps> = ({ image, heading, price, id }) => {
           Add to Cart
         </button>
 
-        {/* See Details Button */}
         <Link
           href={`/products/id${id}`}
           className="w-[120px] xs:w-[120px] sm:w-[120px] rounded px-4 py-2 bg-gray-200 text-black hover:bg-gray-400"
         >
           See Details
         </Link>
-      </div>
+      </div> */}
 
-     {/* Popup for Add to Cart */}
       {popupMessage && (
         <div className="absolute top-12 right-4 bg-gray-900/60 text-white px-4 py-2 rounded-md shadow-md">
           {popupMessage}

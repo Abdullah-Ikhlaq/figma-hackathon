@@ -2,14 +2,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import clsx from "clsx";
 import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev);
-  const toggleSearch = () => setIsSearchOpen((prev) => !prev);
+  const toggleMenu = () => {
+    setMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  }; const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
   return (
     <nav className="relative w-full p-6 md:py-5 bg-white">
@@ -51,63 +57,173 @@ const Header = () => {
         </div>
       )}
 
-      {/* Navigation Links */}
-      <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } lg:flex md:grid md:grid-cols-5 flex-col lg:flex-row md:items-center md:justify-center mt-4 md:mt-0 space-y-4 md:space-y-0 md:space-x-1 lg:space-x-8 lg:ml-16 md:ml-4 `}
+      {/* Desktop Navigation */}
+      <div className="hidden sm:flex items-center justify-center py-5">
+        <ul className="flex justify-between gap-8">
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="/">Home</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="#">Plant pots</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="#">Ceramics</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="#">Tables</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="#">Chairs</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="#">Crockery</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="#">Tableware</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="/products">All Products</a>
+          </li>
+          <li className="text-[16px] font-normal text-[#726E8D]">
+            <a href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+      {/* Mobile Menu */}
+      {/* <div
+        className={clsx(
+          "fixed h-full w-full sm:hidden bg-black/50 top-0 left-0 transition-all ease-in-out duration-500",
+          menuOpen ? "translate-x-0" : "-translate-x-full"
+        )}
+      >
+        <div className="bg-[#fafafa] flex flex-col gap-16 h-full p-8 w-[75%]">
+          <div className="text-[#737373] text-2xl" onClick={closeMenu}>
+            &#10005;
+          </div>
+          <ul className="flex flex-col gap-8">
+            <li>
+              <a
+                href="/"
+                className="text-lg font-medium text-[#737373]"
+                onClick={closeMenu}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/shop"
+                className="text-lg font-medium text-[#737373]"
+                onClick={closeMenu}
+              >
+                Shop
+              </a>
+            </li>
+            <li>
+              <a
+                href="/about"
+                className="text-lg font-medium text-[#737373]"
+                onClick={closeMenu}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-lg font-medium text-[#737373]"
+                onClick={closeMenu}
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact"
+                className="text-lg font-medium text-[#737373]"
+                onClick={closeMenu}
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="/product"
+                className="text-lg font-medium text-[#737373]"
+                onClick={closeMenu}
+              >
+                Products
+              </a>
+            </li>
+          </ul>
+          <div className="flex items-center gap-[5px]">
+            <p className="text-2xl font-medium text-[#23A6F0]">
+              <div>
+                <p className="cursor-pointer">Logout</p>
+                <div className="bg-[#23A6F0] h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div> */}
+
+
+
+      {/* <div
+        className={`${isOpen ? "block" : "hidden"
+          } lg:flex md:grid md:grid-cols-5 flex-col lg:flex-row md:items-center md:justify-center mt-4 md:mt-0 space-y-4 md:space-y-0 md:space-x-1 lg:space-x-8 lg:ml-16 md:ml-4 `}
       >
         <Link
           href="/"
           className="block text-center border-b border-transparent py-1 md:mt-3 lg:-mt-1 mt-0 hover:border-darkPrimary"
         >
-          Home
+          Home 
         </Link>
         <Link
           href="/"
           className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          Tables
+          Tables 
         </Link>
         <Link
           href="/"
           className="block text-center text-darkPrimary border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          Chairs
+          Chairs 
         </Link>
         <Link
           href="/"
           className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          Crockery
+          Crockery 
         </Link>
         <Link
           href="/"
           className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          Cutlery
+          Cutlery 
         </Link>
         <Link
           href="/products"
           className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          All Products
+          All Products 
         </Link>
         <Link
           href="/about"
           className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          About
+          About 
         </Link>
         <Link
-          href="/admin"
+          href="/"
           className="block text-center border-b border-transparent py-1 hover:border-darkPrimary"
         >
-          Admin Pannel
+          Admin Pannel 
         </Link>
 
         <div className="flex gap-4 justify-center">
-          {/* User Icon */}
+
           <Link href="/" aria-label="User Profile">
             <div className="md:relative md:bottom-[5rem] lg:bottom-7 md:left-[3rem] lg:left-[-1rem] flex items-center justify-center w-6 h-6 rounded-full border border-transparent hover:bg-darkPrimary">
               <Image
@@ -132,8 +248,8 @@ const Header = () => {
             </div>
           </Link>
         </div>
-      </div>
-    </nav>
+      </div> */}
+    </nav >
   );
 };
 

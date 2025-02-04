@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Features from "@/components/heroSection/Features";
 import GetInTouch from "@/components/heroSection/GetInTouch";
 import Hero from "@/components/heroSection/Hero";
